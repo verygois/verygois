@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <title>プーさん写真集 2008-2014 | ディナミ シャイスケ</title>
+  <meta name="description" content="2008年-2014年に、ディナミが撮影したプーの写真集 | 価格1000円 | サイズB5、フルカラー">
+  <link rel="icon" href="cover.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="jquery.arctext.js"></script>
+  <style>
+  #cover {
+    background-image: url("cover.jpg");
+  }
+  </style>
+</head>
+<body>
+  <article>
+    <header id="title">
+      <strong>ディナミ シャイスケ</strong>
+      <h1 id="example1">プーさん写真集</h1>
+      <span id="cover"></span>
+      <h2><b>2008-2014</b></h2>
+    </header>
+    <section id="greeting">
+      <p>このプーはディナミシャイスケが高校生の頃から家にい続けている。</p>
+      <p>ディナミはプーさんとの生活をペット以上家族未満の関係で接し続けている。</p>
+      <p>ナイスショップスーの２人が偶然プーにほれ込むことでこの企画はスタートしたのだった・・</p>
+    </section>
+    <aside id="book"></aside>
+    <nav id="show"></nav>
+    <hr>
+  </article>
+  <script type="text/javascript">
+  $('#example1').arctext({radius: 400});
+
+  let pooh = {
+    'img/001.jpg':'サンアンドスター',
+    'img/002.jpg':'プーとクロ',
+    'img/003.jpeg':'プーとプー',
+    'img/004.jpeg':'インスタグラム',
+    'img/005.jpeg':'LINEスタンプ'
+  };
+
+  const cover = document.querySelector("#cover"),
+  article = document.querySelector("article");
+  cover.addEventListener("click", function() {
+    cover.style.display = "none"
+    article.style.backgroundImage = "url('cover.jpg')";
+    window.setInterval(function () {
+      nextBG(pooh, 'article')
+    }, 2000);
+  }, false);
+
+
+  num = 0;
+  function nextBG(imgArr, query = '') {
+    if(num >= Object.entries(imgArr).length - 1) {
+      num = 0;
+    } else {
+      num++;
+    }
+    let thisIMG = Object.entries(imgArr)[num];
+    document.querySelector(query).style.backgroundImage = `url("${thisIMG[0]}")`
+  }
+  </script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

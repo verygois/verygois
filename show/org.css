@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-font: "Arial Narrow", "ＭＳ ゴシック", "MS Gothic", monospace;
+}
+
+#org .btn,
+#org a span {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#org a,
+#org .btn {
+  transition: 1.5s all;
+}
+
+#org .btn:hover,
+#org a:hover {
+  cursor: pointer;
+  transition: .5s all;
+}
+
+#org .btn,
+#org a {
+  color: #000;
+  background-color: #fff;
+  text-shadow: 0.1rem 0.1rem #fff;
+}
+
+#org .btn:hover,
+#org input[type="radio"]:checked+.btn,
+#org a:hover {
+  color: #fff;
+  background-color: #eee;
+  text-shadow: 0.1rem 0.1rem #000;
+}
+
+hr {
+  clear: both;
+  border: none;
+}
+
+#org input[type="radio"] {
+  display: none;
+}
+
+#org {
+  width: 100%;
+  margin: 3rem auto 0;
+  overflow-x: hidden;
+  border-bottom: #000 solid 1px;
+}
+
+#org .btn {
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  text-transform: capitalize;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0 0.5rem 0.25rem;
+}
+
+#org a {
+  font-size: 1rem;
+  clear: both;
+  border-top: #000 solid 1px;
+  padding: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+#org a .date,
+#org a .title,
+#org a span {
+  padding: 0.25rem 0.5rem;
+  margin: 0;
+}
+
+#org a .date {
+  font-family: var(--main-font);
+  flex: 0 0 10rem;
+  text-decoration: none;
+}
+
+#org a .title {
+  font-family: var(--main-font);
+  font-size: 125%;
+  flex: 1 1 33.33%;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+#org a span {
+  font-size: 75%;
+  flex: 0 0 auto;
+  font-size: 90%;
+  word-break: break-word;
+}
+
+@media screen and (max-width: 550px) {
+
+  #org a .date {
+    flex: 0 0 25%;
+  }
+
+  #org a .title {
+    flex: 1 1 70%;
+  }
+
+  #org a span {
+    flex: 1 1 100%;
+  }
+}

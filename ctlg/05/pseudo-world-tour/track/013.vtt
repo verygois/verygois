@@ -1,0 +1,15 @@
+WEBVTT
+
+STYLE
+::cue {
+  color: #fff;
+  -webkit-text-stroke: 1px #000;
+  text-stroke: 1px #000;
+  font-family: "MS Mincho", "SimSong", serif;
+}
+
+00:00:12.000 --> 00:00:16.000
+これが墓標代わりの旗です
+
+00:00:44.500 --> 00:00:48.500
+花見に来ました

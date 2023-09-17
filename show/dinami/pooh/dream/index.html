@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <title>プーの見る夢 〜太陽と星〜 | ディナミ シャイスケ 写真展</title>
+  <meta name="description" content="会場:高円寺 ASOKO | 会期:2015年2月8日(日) - 2月22日(日) | オープン日は土日祝のみ">
+  <link rel="icon" href="000.png">
+  <link rel="stylesheet" href="../style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="../jquery.arctext.js"></script>
+  <style>
+  #cover {
+    background-image: url("003.jpeg");
+  }
+  </style>
+</head>
+<body>
+  <article>
+    <header id="title">
+      <strong>ディナミ シャイスケ 写真展</strong>
+      <h1 id="example1">プーの見る夢</h1>
+      <span id="cover"></span>
+      <h2><b>〜太陽と星〜</b></h2>
+    </header>
+    <section id="greeting">
+      <h2>会場:高円寺 ASOKO</h2>
+      <p>会期:2015年2月8日(日) - 2月22日(日)</p>
+      <p>
+        <time>オープン日は土日祝のみ</time>
+        <time>14時から21時</time>
+      </p>
+    </section>
+    <aside id="book"></aside>
+    <nav id="show"></nav>
+    <hr>
+  </article>
+  <script type="text/javascript">
+  $('#example1').arctext({radius: 400});
+
+  let pooh = {
+    '001.jpeg':'空飛ぶプー',
+    '002.jpeg':'空飛ぶプーのケツ',
+    '003.jpeg':'プーと新プーとD',
+    '004.jpeg':'ASOKOの中のプーと新プーとD',
+    '005.jpeg':'撮影会',
+    '006.jpeg':'タペストリーと空飛ぶプー',
+    '007.jpg':'池野さんと池野さんのプーとプー'
+  };
+
+  const cover = document.querySelector("#cover"),
+  article = document.querySelector("article");
+  cover.addEventListener("click", function() {
+    cover.style.display = "none"
+    article.style.backgroundImage = "url('000.png')";
+    window.setInterval(function () {
+      nextBG(pooh, 'article')
+    }, 2000);
+  }, false);
+
+
+  num = 0;
+  function nextBG(imgArr, query = '') {
+    if(num >= Object.entries(imgArr).length - 1) {
+      num = 0;
+    } else {
+      num++;
+    }
+    let thisIMG = Object.entries(imgArr)[num];
+    document.querySelector(query).style.backgroundImage = `url("${thisIMG[0]}")`
+  }
+  </script>
+  <script type="text/javascript" src="../script.js"></script>
+</body>
+</html>

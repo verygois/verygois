@@ -1,0 +1,309 @@
+html {
+  font-size: 21px;
+  height: -webkit-fill-available;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+}
+
+h1 b,
+h3 strong,
+#main section p {
+  color: gold;
+}
+
+h1 b,
+h3 strong,
+h4,
+#main section p,
+details summary {
+  font-family: Helvetica, Arial, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 500;
+}
+
+details {
+  font-family: "Yu Mincho", "YuMincho", "游明朝", "Times New Roman", Times, serif;
+}
+
+h2,
+h3 small,
+marquee {
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+marquee {
+  position: sticky;
+  top: 0;
+  padding: 0;
+  margin: 0;
+}
+
+h1 b,
+h3 strong {
+  letter-spacing: 0.25rem;
+  transform: scale(1.1 1);
+}
+
+details {
+  letter-spacing: 0.11rem;
+  transform: scale(1.1 1);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+details::after {
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  border: none;
+}
+
+#main {
+  display: flex;
+}
+
+#main section {
+  position: relative;
+  width: 50%;
+}
+
+#main {
+  background: 50% 50% / contain;
+  background-repeat: no-repeat;
+  background-size: 500px;
+}
+
+#show {
+  height: 27.5rem;
+}
+
+#zine {
+  height: 20rem;
+}
+
+#moire {
+  position: relative;
+  height: 10rem;
+}
+
+#main section h1 {
+  font-size: 250%;
+  text-transform: uppercase;
+}
+
+#main section h3,
+aside h3 {
+  float: right;
+}
+
+#main section h3,
+aside h3,
+details summary {
+  font-size: 200%;
+}
+
+h4 {
+  font-size: 145%;
+}
+
+details ul li {
+  font-size: 125%;
+}
+
+details,
+details ul li small {
+  font-size: 75%;
+}
+
+details ul li small {
+  display: block;
+  margin: 0;
+}
+
+details summary,
+h4 {
+  font-weight: 500;
+  width: 100%;
+}
+
+#main section h3 small,
+aside h3 small {
+  font-size: 50%;
+  font-weight: 500;
+}
+
+#main section h1 b,
+#main section h2,
+#main section h3 strong,
+#main section h3 small,
+#main section p,
+aside h3 strong,
+aside h3 small {
+  position: absolute;
+}
+
+#main section h2 {
+  font-size: 100%;
+  font-weight: 500;
+  bottom: 25%;
+  right: 10%;
+  z-index: 10;
+}
+
+#main section h1 b,
+#main section h3 strong,
+#main section h3 small,
+#main section p,
+aside h3 strong,
+aside h3 small {
+  text-align: center;
+  transform-origin: center;
+}
+
+#main section h1 b:nth-child(1) {
+  top: 11.11rem;
+  left: -5rem;
+  transform: rotate(-75deg);
+}
+
+#main section h1 b:nth-child(2) {
+  top: 3.33rem;
+  right: 2rem;
+  width: 20rem;
+  transform: rotate(15deg);
+}
+
+#main section h1 b:nth-child(3) {
+  top: 24.5rem;
+  right: 5rem;
+  transform: rotate(-2.5deg);
+}
+
+#main section h3 strong {
+  top: 7.5rem;
+  right: -3.5rem;
+  transform: rotate(85deg);
+}
+
+#main section h3 small {
+  top: 12.5rem;
+  right: -1.25rem;
+  transform: rotate(95deg);
+}
+
+#main section p {
+  font-size: 90%;
+  right: 7.5rem;
+  bottom: -2.5rem;
+  transform: rotate(-65deg);
+}
+
+aside h3 strong {
+  bottom: 2.5rem;
+  right: 2.5rem;
+  transform: rotate(185deg);
+}
+
+aside h3 small {
+  top: 2.5rem;
+  right: 10rem;
+  transform: rotate(180deg);
+}
+
+marquee {
+  margin-bottom: 1rem;
+}
+
+details {
+  padding: 0 1rem 1rem;
+}
+
+details ul {
+  display: flex;
+  flex-flow: wrap;
+  list-style: none;
+  list-style-position: inside;
+  padding: 0 0 1rem;
+  margin: 0;
+}
+
+details ul li {
+  position: relative;
+  padding: 0.5rem;
+  margin-bottom: 0.25rem;
+  width: calc(100% / 3);
+}
+
+details .list li:hover {
+  cursor: help;
+}
+
+details .list li:hover::after {
+  content: "?";
+  color: gold;
+  font-size: 200%;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
+
+details::after {
+  content: "";
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+details iframe {
+  float: left;
+  margin-right: 1rem;
+  width: 50%;
+  height: 27.5vw;
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 2.5vw;
+    overflow-x: hidden;
+  }
+
+  #main {
+    background-size: 75%;
+  }
+
+  #main {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  #main section {
+    width: 100%;
+  }
+
+  #main section p {
+    right: 9rem;
+    bottom: 3rem;
+    transform: rotate(-40deg);
+  }
+
+  details ul li {
+    width: 50%;
+  }
+
+  details iframe {
+    float: left;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 55vw;
+  }
+}

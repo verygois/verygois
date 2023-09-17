@@ -1,0 +1,106 @@
+{
+  "this" : "#AABooth と サイゼリヤの絵",
+  "description" : "#AABooth and 14 Religious Painters displayed in Saizeriya",
+  "card" : "summary_large_image",
+  "src" : "https://ia902703.us.archive.org/13/items/americanapparel/aa/87267435403.jpeg",
+  "items" : [
+    {
+      "title" : "システィーナの聖母",
+      "artist" : "ラファエロ・サンティ",
+      "date" : "1513年と1514年の間",
+      "url" : "https://upload.wikimedia.org/wikipedia/commons/b/b7/Raffaello%2C_madonna_sistina_03.jpg",
+      "wiki" : "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%82%B9%E3%83%86%E3%82%A3%E3%83%BC%E3%83%8A%E3%81%AE%E8%81%96%E6%AF%8D"
+    },
+    {
+      "title" : "ガラテイアの勝利",
+      "artist" : "ラファエロ・サンティ",
+      "date" : "1511年",
+      "url" : "https://upload.wikimedia.org/wikipedia/commons/2/27/Raphael%27s_Triumph_of_Galatea_02.jpg",
+      "wiki" : "https://ja.wikipedia.org/wiki/%E3%82%AC%E3%83%A9%E3%83%86%E3%82%A4%E3%82%A2%E3%81%AE%E5%8B%9D%E5%88%A9"
+    },
+    {
+      "title" : "魚の聖母",
+      "artist" : "ラファエロ・サンティ",
+      "date" : "1513年と1514年の間",
+      "url" : "https://upload.wikimedia.org/wikipedia/commons/b/bb/Raffaello_Sanzio_-_Sacra_Famiglia_con_Rafael%2C_Tobia_e_San_Girolamo%2C_o_Vergine_del_pesce.jpg",
+      "wiki" : "https://ja.wikipedia.org/wiki/%E9%AD%9A%E3%81%AE%E8%81%96%E6%AF%8D"
+    },
+    {
+      "title" : "聖体の論議",
+      "artist" : "ラファエロ・サンティ",
+      "date" : "1509年と1510年の間",
+      "url" : "https://upload.wikimedia.org/wikipedia/commons/6/61/Disputa_del_Sacramento_%28Rafael%29.jpg",
+      "wiki" : "https://ja.wikipedia.org/wiki/%E8%81%96%E4%BD%93%E3%81%AE%E8%AB%96%E8%AD%B0"
+    },
+    {
+      "title" : "アテナイの学堂",
+      "artist" : "ラファエロ・サンティ",
+      "date" : "1509年",
+      "url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Raffael_058.jpg/800px-Raffael_058.jpg",
+      "wiki" : "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%86%E3%83%8A%E3%82%A4%E3%81%AE%E5%AD%A6%E5%A0%82"
+    },
+    {
+      "title" : "アムールとプシュケー、子供たち",
+      "artist" : "ウィリアム・アドルフ・ブグロー",
+      "date" : "1890年",
+      "url" : "https://upload.wikimedia.org/wikipedia/commons/4/48/Bouguereau_first_kiss.jpg",
+      "wiki" : "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%A0%E3%83%BC%E3%83%AB%E3%81%A8%E3%83%97%E3%82%B7%E3%83%A5%E3%82%B1%E3%83%BC%E3%80%81%E5%AD%90%E4%BE%9B%E3%81%9F%E3%81%A1"
+    },
+    {
+      "title" : "リュートを弾く天使",
+      "artist" : "ロッソ・フィオレンティーノ",
+      "date" : "1518年",
+      "url" : "https://upload.wikimedia.org/wikipedia/commons/3/39/Rosso_Fiorentino_-_Musician_Angel_-_WGA20116.jpg",
+      "wiki" : "https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%88%E3%82%92%E5%BC%BE%E3%81%8F%E5%A4%A9%E4%BD%BF"
+    },
+    {
+      "title" : "プリマヴェーラ",
+      "artist" : "サンドロ・ボッティチェッリ",
+      "date" : "1482年",
+      "url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Primavera_%28Botticelli%29.jpg/1600px-Primavera_%28Botticelli%29.jpg",
+      "wiki" : "https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AA%E3%83%9E%E3%83%B4%E3%82%A7%E3%83%BC%E3%83%A9"
+    },
+    {
+      "title" : "ヴィーナスの誕生",
+      "artist" : "サンドロ・ボッティチェッリ",
+      "date" : "1485年頃",
+      "url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Sandro_Botticelli_046.jpg/1599px-Sandro_Botticelli_046.jpg",
+      "wiki" : "https://ja.wikipedia.org/wiki/%E3%83%B4%E3%82%A3%E3%83%BC%E3%83%8A%E3%82%B9%E3%81%AE%E8%AA%95%E7%94%9F"
+    },
+    {
+      "title" : "アダムの創造",
+      "artist" : "ミケランジェロ・ブオナローティ",
+      "date" : "1511年頃",
+      "url" : "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Creaci%C3%B3n_de_Ad%C3%A1n.jpg/2560px-Creaci%C3%B3n_de_Ad%C3%A1n.jpg",
+      "wiki" : "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%80%E3%83%A0%E3%81%AE%E5%89%B5%E9%80%A0"
+    },
+    {
+      "title" : "受胎告知",
+      "artist" : "フラ・アンジェリコ",
+      "date" : "1438年から1450年まで",
+      "url" : "https://upload.wikimedia.org/wikipedia/commons/1/1b/ANGELICO%2C_Fra_Annunciation%2C_1437-46_%282236990916%29.jpg",
+      "wiki" : "https://ja.wikipedia.org/wiki/%E5%8F%97%E8%83%8E%E5%91%8A%E7%9F%A5_(%E3%83%95%E3%83%A9%E3%83%BB%E3%82%A2%E3%83%B3%E3%82%B8%E3%82%A7%E3%83%AA%E3%82%B3%E3%80%81%E3%82%B5%E3%83%B3%E3%83%BB%E3%83%9E%E3%83%AB%E3%82%B3)"
+    },
+    {
+      "title" : "受胎告知",
+      "artist" : "レオナルド・ダ・ヴィンチ",
+      "date" : "1472年 - 1475年頃",
+      "url" : "https://upload.wikimedia.org/wikipedia/commons/b/b0/Annunciation_%28Leonardo%29_%28cropped%29.jpg",
+      "wiki" : "https://ja.wikipedia.org/wiki/%E5%8F%97%E8%83%8E%E5%91%8A%E7%9F%A5_(%E3%83%AC%E3%82%AA%E3%83%8A%E3%83%AB%E3%83%89%E3%83%BB%E3%83%80%E3%83%BB%E3%83%B4%E3%82%A3%E3%83%B3%E3%83%81)"
+    },
+    {
+      "title" : "最後の晩餐",
+      "artist" : "ドメニコ・ギルランダイオ",
+      "date" : "1486年頃",
+      "url" : "https://upload.wikimedia.org/wikipedia/commons/8/89/Domenico_ghirlandaio%2C_cenacolo_di_ognissanti_01.jpg",
+      "wiki" : "https://ja.wikipedia.org/wiki/%E6%9C%80%E5%BE%8C%E3%81%AE%E6%99%A9%E9%A4%90_(%E3%82%AE%E3%83%AB%E3%83%A9%E3%83%B3%E3%83%80%E3%82%A4%E3%82%AA)"
+    },
+    {
+      "title" : "夫婦の間",
+      "artist" : "アンドレア・マンテーニャ",
+      "date" : "1465年と1474年の間",
+      "url" : "https://upload.wikimedia.org/wikipedia/commons/7/72/Andrea_Mantegna_-_Ceiling_Oculus_-_WGA14023.jpg",
+      "wiki" : "https://ja.wikipedia.org/wiki/%E3%82%AF%E3%82%A2%E3%83%89%E3%83%A9%E3%83%88%E3%82%A5%E3%83%BC%E3%83%A9"
+    }
+  ]
+}

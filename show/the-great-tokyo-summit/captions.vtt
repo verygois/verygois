@@ -1,0 +1,26 @@
+WEBVTT
+
+STYLE
+::cue {
+  color: yellow;
+  -webkit-text-stroke: 1px #000;
+  text-stroke: 1px #000;
+}
+
+1
+00:00:01.000 --> 00:00:09.000 line:10% position:50%
+11.20 - 11.30.2018
+
+00:00:02.500 --> 00:00:09.000 line:50%
+at ∧°┐
+
+00:00:05.000 --> 00:00:09.000 line:90%
+The Great Tokyo Summit
+
+2
+00:00:11.000 --> 00:00:18.000 line:0 position:0 size:100% align:start
+THIS IS A SHOW OF AN <i>UNIMPORTANT</i> SUMMIT AT ガスト
+
+00:00:11.000 --> 00:00:18.000 line:100% position:0 size:100% align:end
+by Newell Walther, emamouse, Haretsu,
+Aisha Mizuno, しー没, 星川あさ子

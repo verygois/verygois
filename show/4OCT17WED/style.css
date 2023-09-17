@@ -1,0 +1,161 @@
+html {
+  font-family: Arial, "YuGothic", "Yu Gothic", sans-serif;
+  font-size: 15px;
+  height: -webkit-fill-available;
+}
+
+@font-face {
+  font-family: "MS Mincho", serif;
+  src: url("https://vg.pe.hu/jp/MSMincho.ttf");
+}
+
+.pehu {
+  font-family: "MS Mincho", "SimSong", serif;
+}
+
+body {
+  background-size: contain;
+}
+
+h1,
+h2 {
+  font-size: 100%;
+  font-weight: 500;
+}
+
+h1 {
+  line-height: 250%;
+}
+
+nav {
+  text-transform: uppercase;
+}
+
+header,
+nav {
+  box-sizing: border-box;
+  float: left;
+  padding: 1rem;
+}
+
+header {
+  float: left;
+  width: calc(35% - 2rem);
+  margin: 1rem;
+}
+
+nav {
+  width: 60%;
+  max-width: 750px;
+}
+
+aside {
+  box-sizing: border-box;
+  padding: 1rem 1.5rem;
+  float: right;
+  width: 65%;
+}
+
+nav *:not(p) {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+a,
+header u,
+nav u {
+  cursor: pointer;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+nav u {
+  border-bottom: 1px solid;
+}
+
+nav u:hover {
+  border-bottom: 1px solid yellow;
+  color: blue;
+}
+
+nav p u,
+nav p a,
+header u,
+aside a {
+  border: solid 1px;
+  padding: 0.25rem 0.5rem
+}
+
+nav p u:hover  {
+  border: solid 1px yellow;
+  background: yellow;
+}
+
+nav p a,
+header u,
+#prof a:hover,
+aside a {
+  color: #fff;
+  background: #000;
+}
+
+nav p a:hover,
+header u:hover,
+aside a:hover {
+  color: #fff;
+  background: blue;
+  box-shadow: 5px 5px 0 yellow;
+}
+
+#prof {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#prof a {
+  box-sizing: border-box;
+  font-size: 250%;
+  padding: 1rem 2rem;
+  margin: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#prof iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: 75%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 14px;
+  }
+
+  header {
+    float: left;
+    padding: 0 1rem;
+    margin: 0;
+    width: max-content;
+    max-width: calc(100% - 2rem);
+  }
+
+  nav {
+    float: right;
+    padding: 0.5rem;
+    width: calc(100% - 170px);
+  }
+
+  aside {
+    padding: 1rem;
+    width: 100%;
+  }
+}

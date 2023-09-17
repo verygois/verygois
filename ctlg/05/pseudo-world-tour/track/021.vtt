@@ -1,0 +1,21 @@
+WEBVTT
+
+STYLE
+::cue {
+  color: #fff;
+  -webkit-text-stroke: 1px #000;
+  text-stroke: 1px #000;
+  font-family: "MS Mincho", "SimSong", serif;
+}
+
+00:00:15.000 --> 00:00:33.000 line:50% position:50%
+[ <i>Here is Nakanoshima Rose Garden</i> ]
+
+00:01:45.000 --> 00:01:49.000
+鳥は遺体を食べた後
+
+00:01:50.000 --> 00:01:54.000
+丘の上をぐるぐる旋回して
+
+00:01:55.000 --> 00:01:59.000
+またどこかに行きます

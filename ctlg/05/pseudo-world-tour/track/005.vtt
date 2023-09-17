@@ -1,0 +1,21 @@
+WEBVTT
+
+STYLE
+::cue {
+  color: #fff;
+  -webkit-text-stroke: 1px #000;
+  text-stroke: 1px #000;
+  font-family: "MS Mincho", "SimSong", serif;
+}
+
+00:00:00.500 --> 00:00:05.000
+外はまだ明るいです
+"It was still bright/light outside."
+
+00:00:21.000 --> 00:00:26.500
+もうそろそろ日が暮れようとしています
+the sun will soon set
+
+00:00:27.000 --> 00:00:40.000
+今日の 日が暮れる時間は 6時19分 です
+Today's sunset time is 6:19 PM

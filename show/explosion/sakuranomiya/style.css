@@ -1,0 +1,201 @@
+html {
+  font-size: 16px;
+  font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  height: -webkit-fill-available;
+}
+
+body {
+  background: 50% 50% / cover;
+  background-image: url("cover.png");
+}
+
+body,
+h1,
+h1 button,
+main,
+#access {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+hr {
+  border: none;
+}
+
+#main,
+main {
+  width: 100%;
+  height: 100vh;
+  max-height: -webkit-fill-available;
+}
+
+#main {
+  padding: 0.5rem;
+  position: relative;
+  display: flex;
+  flex-flow: wrap;
+  align-items:flex-start;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+#main section p {
+  background-color: rgba( 255, 255, 11, 0.7 );
+  padding: 0.5rem;
+  margin: 5rem auto 0;
+  width: 90%;
+  max-width: 750px;
+}
+
+#main section p,
+main img,
+footer {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  user-select: none;
+}
+
+#main section p,
+footer {
+  top: 50%;
+  left: 50%;
+}
+
+nav {
+  font-size: 100%;
+  width: calc(75% - 0.5rem);
+  max-width: 450px;
+}
+
+nav p {
+  padding: 0;
+  margin: 0 0 0.5rem;
+  background-color: rgba(255, 125, 255, 0.7)
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  font-weight: bold;
+  outline: none;
+}
+
+h1 button {
+  float: right;
+}
+
+nav b small {
+  font-size: 75%;
+  font-weight: 400;
+}
+
+h1 button {
+  font-size: 90%;
+}
+
+#access {
+  font-size: 125%;
+}
+
+nav b {
+  font-size: 150%;
+}
+
+#access,
+h1 button {
+  background: transparent;
+  color: #fff;
+}
+
+#act {
+  font-size: 250%;
+  max-width: 22.5%;
+}
+
+#act,
+a,
+main {
+  background: #CCFFFF;
+  color: #fff;
+}
+
+#act {
+  float: right;
+  pointer-events: auto;
+  user-select: auto;
+}
+
+main {
+  display: none;
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+}
+
+main h1 {
+  font-size: 250%;
+  padding: 1rem;
+}
+
+main img {
+  z-index: -1;
+  max-width: 40%;
+}
+
+main img:nth-child(2) {
+  top: 20%;
+  left: 80%;
+}
+
+main img:nth-child(3) {
+  top: 70%;
+  left: 75%;
+}
+
+main img:nth-child(4) {
+  top: 80%;
+  left: 20%;
+}
+
+main img:nth-child(5) {
+  top: 60%;
+  left: 45%;
+}
+
+main img:nth-child(6) {
+  top: 25%;
+  left: 25%;
+}
+
+footer {
+  background: 50% 50% / cover;
+  background-image: url("map.png");
+  width: 95%;
+  max-width: 956px;
+  height: 60.9vw;
+  max-height: 612px;
+  bottom: 0;
+}
+
+footer img {
+  opacity: 0;
+  transition: 0.5s;
+  width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 3vw;
+  }
+
+  #main section p {
+    margin: 20vw auto 0;
+    width: 90%;
+    max-width: 750px;
+  }
+}

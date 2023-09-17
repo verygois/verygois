@@ -1,0 +1,142 @@
+html {
+  font-size: 16px;
+  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  height: -webkit-fill-available;
+}
+
+h1,
+h2 {
+  margin: 0.5rem;
+  padding: 0;
+  filter: invert(1);
+  mix-blend-mode: difference;
+}
+
+button {
+  color: #000;
+  font-family: inherit;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 150%;
+}
+
+h2 {
+  font-size: 125%;
+}
+
+aside {
+  margin: 0.25rem;
+}
+
+body {
+  background: #fff 50% 50% / contain;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  padding: 0.25rem;
+  margin: 0;
+  min-height: 100vh;
+}
+
+article button {
+  background: transparent;
+  border-radius: 50%;
+  display: block;
+  font-size: 250%;
+  float: right;
+  margin: 0 0.5rem;
+  padding: 0 1.11rem;
+  outline: none;
+}
+
+article::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+nav ol {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-flow: row-reverse wrap-reverse;
+  padding: 0;
+  margin: 0;
+}
+
+nav ol li {
+  box-sizing: border-box;
+  filter: invert(1);
+  mix-blend-mode: difference;
+  list-style-position: inside;
+  padding: 0 1rem;
+  margin: 0.25rem;
+  width: calc(100% / 3 - 0.5rem);
+}
+
+nav button {
+  font-size: 90%;
+  font-weight: 500;
+}
+
+@media (orientation: portrait) {
+  html {
+    font-size: 3vw;
+  }
+
+  body {
+    min-height: -webkit-fill-available;
+  }
+
+  article::after {
+    padding: 1vw;
+  }
+
+  nav ol li {
+    padding: 2vw 1vw;
+    margin: 2vw 1vw;
+    width: calc(100% / 2 - 2vw);
+  }
+
+  nav button {
+    padding: 0.5vw 1vw;
+  }
+}
+
+article img {
+  float: left;
+  margin: 0.5rem;
+  max-width: 50%;
+}
+
+section {
+  margin: 1rem 0.5rem;
+}
+
+
+@media screen and (min-width: 750px) {
+  article img {
+    max-height: 75vh;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  article img {
+    margin: 0.5rem 0.5rem 2rem;
+    width: calc(100% - 1rem);
+    max-width: calc(100% - 1rem);
+  }
+
+  article::after {
+    padding: 2vw;
+  }
+}
+
+nav ol li::marker {
+  font-size: 333%;
+}

@@ -1,0 +1,248 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #F39800;
+  color: #fff;
+}
+
+h1,
+h2 i,
+h2 small,
+nav {
+  font-family: 'Tangerine', cursive;
+}
+
+h2 b,
+article {
+  font-family: 'New Tegomin', serif;
+}
+
+h3,
+aside {
+  font-family: "YuGothic", "Yu Gothic", "游ゴシック体", sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.aki {
+  background: linear-gradient(0deg, #3A5800, #F39800);
+}
+
+h1,
+article::before {
+  background: linear-gradient(90deg, #3A5800, #F39800);
+}
+
+h2,
+.solo {
+  background: linear-gradient(0deg, #F39800, #3A5800);
+}
+
+h3 *,
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #F39800, #3A5800);
+}
+
+h1,
+h3 *,
+article::before {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 {
+  font-size: 333%;
+}
+
+h2,
+h2 i {
+  font-size: 222%;
+}
+
+nav {
+  font-size: 200%;
+}
+
+article::before {
+  font-size: 150%;
+}
+
+h3,
+a {
+  font-size: 125%;
+}
+
+h4,
+article section {
+  font-size: 90%;
+}
+
+h1,
+h3,
+h4 {
+  text-align: center;
+}
+
+h2,
+nav,
+article section {
+  float:left;
+}
+
+h3,
+h4 {
+  float: right;
+}
+
+h2 {
+  padding: 2.5rem;
+  margin: 2.5vw 5vw;
+  line-height: 175%;
+}
+
+h2 small {
+  display: inline-block;
+  transform: scale(0.75);
+}
+
+h3 {
+  background: #fff;
+  border-radius: 50%;
+  color: #111;
+  padding: 2rem;
+  margin: 2.5vw 5vw;
+  width: 12.5rem;
+  height: 12.5rem;
+}
+
+h3 small {
+  display: inline-block;
+  padding: 0.9rem 0;
+}
+
+h4 {
+  padding: 1rem 1.75rem;
+  margin: 1.5vw;
+  border-radius: 5rem;
+}
+
+nav {
+  border-bottom: 22.5rem solid #3A5800;
+  border-left: 4.5rem solid transparent;
+  border-right: 4.5rem solid transparent;
+  padding: 0;
+  margin: 5vw 5vw 2.5rem;
+  height: 0;
+  max-width: 550px;
+}
+
+nav p {
+  padding: 0;
+  margin: 1.5rem 1rem;
+}
+
+aside {
+  padding: 0;
+  margin: 2rem 0.5rem 0.5rem;
+}
+
+article {
+  break-before: page;
+  display: flex;
+  padding: 4rem 0 0;
+  position: relative;
+  width: 100%;
+}
+
+aside p,
+article p {
+  padding: 0;
+  margin: 1rem;
+}
+
+article::before {
+  content: "ギャラクシー・エクスプレス 555 日本ツアー 2018年・秋";
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem 0.5rem;
+  width: 100%;
+}
+
+article section {
+  border-radius: 2rem;
+  padding: 0;
+  margin: 0.25rem;
+  width: calc(50% - 0.5rem);
+  max-width: 25rem;
+  height: 12.5rem;
+}
+
+article::-webkit-scrollbar {
+   width: 2rem;
+   height: 2rem;
+}
+
+article::-webkit-scrollbar-track {
+   background-color: transparent;
+}
+
+article::-webkit-scrollbar-thumb {
+  border-radius: 2rem;
+}
+
+
+@media (orientation: landscape) {
+  article {
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+  }
+
+  article section {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    list-style-position: inside;
+  }
+}
+
+
+@media (orientation: portrait) {
+  html {
+    font-size: 2.5vw;
+  }
+
+  nav {
+    width: calc(100% - 10vw);
+    max-width: calc(100% - 10vw);
+    border-bottom: 22.5rem solid #3A5800;
+  }
+
+  article {
+    flex-flow: wrap;
+    padding: 4rem 0.5rem 0.5rem;
+  }
+
+  article::before {
+    text-align: center;
+  }
+
+  article section {
+    height: 14.5rem;
+  }
+}
