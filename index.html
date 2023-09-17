@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <script src="index.js"></script>
+  <script src="menu.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      indexBody()
+      console.log("DOM fully loaded and parsed");
+    });
+  </script>
+
+  <!--og:meta-->
+  <meta content="website" property="og:type">
+  <title>Very Gois</title>
+  <meta content="Very Gois" property="og:title">
+  <meta content="Very Gois aims to disseminate vg things of all over the world." name="description">
+  <meta content="Very Gois aims to disseminate vg things of all over the world." name="og:description">
+
+  <meta name="author" content="vg.pe.hu">
+  <meta name="reply-to" content="sorryforthedelayinsending@vg.pe.hu">
+
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://vg.pe.hu/" property="og:url">
+  <meta content="https://vg.pe.hu/cv/icon/cover.png" property="og:image">
+  <meta content="https://vg.pe.hu/cv/icon/cover.png" name="twitter:image:src">
+
+  <!--Icons-->
+  <link rel="icon" href="https://vg.pe.hu/cv/icon/favicon.png" type="image/png">
+  <link rel="icon" href="https://vg.pe.hu/cv/icon/android.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="https://vg.pe.hu/cv/icon/ios.png" sizes="180x180" type="image/png">
+
+  <link rel="stylesheet" href="menu.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=IBM+Plex+Mono:wght@300&display=swap">
+</head>
+
+<body>
+  <header id="header"></header>
+  <main>
+    <h1 id="title"></h1>
+  </main>
+  <footer>
+    <p id="description"></p>
+    <time id="lastModified"></time>
+  </footer>
+</body>
+
+</html>
