@@ -11,7 +11,7 @@
     document.addEventListener("DOMContentLoaded", () => {
       indexBody()
       fetchHTML('compilation.html', '#compilation');
-      fetchHTML('https://vg.pe.hu/1f/contents.html', '#one');
+      fetchHTML('/1f/contents.html', '#one');
     });
   </script>
 
@@ -24,9 +24,9 @@
 
   <!--for Twitter-->
   <meta content="summary_large_image" name="twitter:card">
-  <meta content="https://vg.pe.hu/" property="og:url">
-  <meta content="https://vg.pe.hu/cv/icon/cover.png" property="og:image">
-  <meta content="https://vg.pe.hu/cv/icon/cover.png" name="twitter:image:src">
+  <meta content="https://vg.pe.hu/ctlg/" property="og:url">
+  <meta content="https://vg.pe.hu/ctlg/cover.png" property="og:image">
+  <meta content="https://vg.pe.hu/ctlg/cover.png" name="twitter:image:src">
 
   <!--Icons-->
   <link rel="icon" href="/cv/icon/favicon.png" type="image/png">
@@ -49,6 +49,7 @@
   </main>
   <footer>
     <p id="description"></p>
+    <u>Last Modified</u>
     <time id="lastModified"></time>
   </footer>
 </body>

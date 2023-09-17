@@ -1,120 +1,174 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <link rel="icon" href="https://vg.pe.hu/up/cv/logo.png">
-  <link rel="stylesheet" type="text/css" href="../compilation.css" />
-  <title>Very Gois #3</title>
-  <meta property="og:title" content="Very Gois #3" />
-  <meta property="og:description" content="First Press 2017.3.22 | Totla 1.91GB" />
-  <meta property="og:type" content="product" />
-  <meta property="og:site_name" content="vg.pe.hu" />
-  <meta property="og:url" content="https://vg.pe.hu/ctlg/03/" />
-  <meta property="og:image" content="https://vg.pe.hu/ctlg/03/000.JPG" />
-  <meta property="og:locale" content="ja_JP" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://vg.pe.hu/ctlg/03/000.JPG" />
+  <script src="../../index.js"></script>
+  <script src="../js/img.js"></script>
+  <script>
+    const imgAll = [
+      "img/000.JPG",
+      "img/001.JPG",
+      "img/002.JPG",
+      "img/003.JPG",
+      "img/004.JPG",
+      "img/005.JPG",
+    ];
+
+    document.addEventListener("DOMContentLoaded", () => {
+      slideIMG(imgAll, '#img')
+    });
+  </script>
+
+  <!--og:meta-->
+  <meta content="product" property="og:type">
+  <title>Very Gois #03</title>
+  <meta content="Very Gois #03" property="og:title">
+  <meta content="First Press 2017.3.22 | Totla 1.91GB" name="description">
+  <meta content="First Press 2017.3.22 | Totla 1.91GB" name="og:description">
+
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://vg.pe.hu/ctlg/03/" property="og:url">
+  <meta content="https://vg.pe.hu/ctlg/03/img/000.JPG" property="og:image">
+  <meta content="https://vg.pe.hu/ctlg/03/img/000.JPG" name="twitter:image:src">
+
+  <!--Icons-->
+  <link rel="icon" href="/cv/icon/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
-  <script src="../../index.js"></script>
 </head>
+
 <body>
-  <p class="no">Very Gois <i>#3</i></p>
-  <main class="contents">
-    <img src="000.JPG" />
+  <h1 id="title" class="no">
+    Very Gois
+    <b>#03</b>
+  </h1>
+  <article id="index">
+    <div id="img">
+      <span dir="ltr" id="pre" onclick="pre(imgAll, '#img')"></span>
+      <span dir="rtl" id="next" onclick="next(imgAll, '#img')"></span>
+    </div>
     <section class="info">
-      <p><b>DVD-R for computer</b></p>
-      8 Zł<br>
-      ・romantycznahistoria.wav<br>
-      ・romantycznahistoria.mp4<br>
-      ・concert_romantycznahistoria.mp4<br>
-      <br>
-      Constellation Botsu<br>
-      ・2016年11月 21日 12時 17分 43秒 .pdf<br>
-      ・Botsu798.wav<br>
-      ・Botsu801.wav<br>
-      <br>
-      emamouse<br>
-      ・マウロック<br>
-      ・しわの柿.wav<br>
-      ・ねず鼻.wav<br>
-      <br>
-      Hannah Perry<br>
-      ・LIVID.mp3<br>
-      ・LIVID.mp4<br>
-      ・SEEYOUINHELL.mp3<br>
-      ・SEEYOUINHELL.mp4<br>
-      <br>
-      Headband<br>
-      ・Head Chamber #1 (feat. Jessica Ashley Rachel) .wav<br>
-      <br>
-      Jack Patterson<br>
-      ・Keine Zukunft.aif<br>
-      <br>
-      Jesus Belluci<br>
-      ・fuck being at all.mp3<br>
-      ・fuck being at all.mp4<br>
-      ・skeetbomb.mp3<br>
-      ・skeetbomb.mp4<br>
-      <br>
-      Just the Right Height<br>
-      ・The Clock (Alex&#39;s Song 2) .wav<br>
-      <br>
-      Max Eilbacher<br>
-      ・Ambiguous Cartoon Character Standing in Fog.wav<br>
-      <br>
-      Nina Cristante<br>
-      ・fp 4 life sport.mp4<br>
-      ・split but still paying.mp3<br>
-      ・Workout your abs by doing these　laughing exercises. Hilarious !!!.mp3<br>
-      <br>
-      Ro<br>
-      ・Ro-MWO_track2.aiff
+      <u>DVD-R for computer</u>
+      <ul>
+        8 Zł
+        <li>romantycznahistoria.wav</li>
+        <li>romantycznahistoria.mp4</li>
+        <li>concert_romantycznahistoria.mp4</li>
+      </ul>
+      <ul>
+        Constellation Botsu
+        <li>2016年11月 21日 12時 17分 43秒 .pdf</li>
+        <li>Botsu798.wav</li>
+        <li>Botsu801.wav</li>
+      </ul>
+      <ul>
+        emamouse
+        <li>マウロック</li>
+        <li>しわの柿.wav</li>
+        <li>ねず鼻.wav</li>
+      </ul>
+      <ul>
+        Hannah Perry
+        <li>LIVID.mp3</li>
+        <li>LIVID.mp4</li>
+        <li>SEEYOUINHELL.mp3</li>
+        <li>SEEYOUINHELL.mp4</li>
+      </ul>
+      <ul>
+        Headband
+        <li>Head Chamber #1 (feat. Jessica Ashley Rachel) .wav</li>
+      </ul>
+      <ul>
+        Jack Patterson
+        <li>Keine Zukunft.aif</li>
+      </ul>
+      <ul>
+        Jesus Belluci
+        <li>fuck being at all.mp3</li>
+        <li>fuck being at all.mp4</li>
+        <li>skeetbomb.mp3</li>
+        <li>skeetbomb.mp4</li>
+      </ul>
+      <ul>
+        Just the Right Height
+        <li>The Clock (Alex's Song 2) .wav</li>
+      </ul>
+      <ul>
+        Max Eilbacher
+        <li>Ambiguous Cartoon Character Standing in Fog.wav</li>
+      </ul>
+      <ul>
+        Nina Cristante
+        <li>fp 4 life sport.mp4</li>
+        <li>split but still paying.mp3</li>
+        <li>Workout your abs by doing these　laughing exercises. Hilarious !!!.mp3</li>
+      </ul>
+      <ul>
+        Ro
+        <li>Ro-MWO_track2.aiff</li>
+      </ul>
     </section>
-    <section class="info right">
-      <p><b>Booklet</b></p>
-      1: OOMUNETAKA (Constellation Botsu)<br>
-      2: Keke Hunt (Just the Right Height)<br>
-      3: Nina Cristante &amp; LIFE SPORT<br>
-      4: KAITŌ Itsuki<br>
-      5: emamouse<br>
-      <p>Cover: NANOOK</p>
+    <section class="info">
+      <u>Booklet</u>
+      <ol>
+        <li>OOMUNETAKA (Constellation Botsu)</li>
+        <li>Keke Hunt (Just the Right Height)</li>
+        <li>Nina Cristante &amp; LIFE SPORT</li>
+        <li>KAITŌ Itsuki</li>
+        <li>emamouse</li>
+      </ol>
+      <ul>
+        <li>Cover: NANOOK</li>
+      </ul>
     </section>
-    <section class="info right">
-      <p>
-        <b>First Press</b>
-        2017.3.22
-      </p>
-      <p>
-        <b>review</b>
+    <aside>
+      <h2>
+        <u>First Press</u> <time>2017.3.22</time>
+      </h2>
+      <p class="links">
+        <u>review</u>
         <a href="https://www.tinymixtapes.com/chocolate-grinder/listen-nice-shop-su-very-gois-03-sample" target="_blank">Tiny Mix Tapes</a>
       </p>
-    </section>
-    <article class="pr">
-      <iframe src="https://www.youtube.com/embed/rPSwxXIGgh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <section class="buy">
-        <p class="no">
-          Sales Price
-          <i>2000 JPY</i>
-          <br />
-          Wholesale Price
-          <i>1000 JPY</i>
-        </p>
-        <p class="order"><a href="https://verygois.bandcamp.com/merch/very-gois-3">Order Now</a></p>
-        <p>
-          <b>Distributors</b>
-          <a href="???" target="_blank">???</a>
-        </p>
-      </section>
-    </article>
-  </main>
-  <article id="credit" class="contents"></article>
-  <button id="print" onclick="history.back(-1);return false;" type="button">↵</button>
+    </aside>
+  </article>
+
+  <form action="" method="">
+    <h3 class="no" id="sales">
+      Sales Price
+      <b>2000 JPY</b>
+    </h3>
+    <h3 class="no" id="wholesale">
+      Wholesale Price
+      <b>1000 JPY</b>
+    </h3>
+    <button type="button">Buy Now</button>
+  </form>
+  <div id="player"></div>
   <script>
-  fetchHTML('credit.html', '#credit');
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          videoId: 'rPSwxXIGgh0',
+          playerVars: {
+            'controls': 0
+          }
+        });
+      }
   </script>
+  <script src="../js/youtube.js"></script>
+  
+  <!--
+  <aside id="dis" class="links">
+    <u>Distributors</u>
+    <a href="#" target="_blank">???</a>
+  </aside>
+  -->
+
 </body>
 
 </html>

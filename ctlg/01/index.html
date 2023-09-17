@@ -1,80 +1,116 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <link rel="icon" href="https://vg.pe.hu/up/cv/logo.png">
-  <link rel="stylesheet" type="text/css" href="../compilation.css" />
-  <title>Very Gois #1</title>
-  <meta property="og:title" content="Very Gois #1" />
-  <meta property="og:description" content="First Press 2016.4.24 | Total Time 35 min" />
-  <meta property="og:type" content="product" />
-  <meta property="og:site_name" content="vg.pe.hu" />
-  <meta property="og:url" content="https://vg.pe.hu/ctlg/01/" />
-  <meta property="og:image" content="https://vg.pe.hu/ctlg/01/000.JPG" />
-  <meta property="og:locale" content="ja_JP" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://vg.pe.hu/ctlg/01/000.JPG" />
+  <script src="../../index.js"></script>
+  <script src="../js/img.js"></script>
+  <script>
+    const imgAll = [
+      "img/000.JPG",
+      "img/001.JPG",
+      "img/002.JPG",
+    ];
+
+    document.addEventListener("DOMContentLoaded", () => {
+      slideIMG(imgAll, '#img')
+    });
+  </script>
+
+  <!--og:meta-->
+  <meta content="product" property="og:type">
+  <title>Very Gois #01</title>
+  <meta content="Very Gois #01" property="og:title">
+  <meta content="First Press 2016.4.24 | Total Time 35 min" name="description">
+  <meta content="First Press 2016.4.24 | Total Time 35 min" name="og:description">
+
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://vg.pe.hu/ctlg/01/" property="og:url">
+  <meta content="https://vg.pe.hu/ctlg/01/img/000.JPG" property="og:image">
+  <meta content="https://vg.pe.hu/ctlg/01/img/000.JPG" name="twitter:image:src">
+
+  <!--Icons-->
+  <link rel="icon" href="/cv/icon/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../css/style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
 </head>
+
 <body>
-  <p class="no">Very Gois <i>#1</i></p>
-  <main class="contents">
-    <img src="000.JPG" />
+  <h1 id="title" class="no">
+    Very Gois
+    <b>#01</b>
+  </h1>
+  <article id="index">
+    <div id="img">
+      <span dir="ltr" id="pre" onclick="pre(imgAll, '#img')"></span>
+      <span dir="rtl" id="next" onclick="next(imgAll, '#img')"></span>
+    </div>
     <section class="info">
-      <p><b>Tracklist</b></p>
-      <p>
-        1. -^] – J_JJJJJJJJJJJJ<br>
-        2. sound adventure - emeraldclitoris<br>
-        3. jnjnjnwavVRSPIUIMjnjnjnwavVRSP2 – Bug bus piano<br>
-        4. sufo rabiaka bird with forbnl – துஈசிதிசி திஇல்டூ collabs<br>
-        5. Acid Brain (Of Beethoven) – 脳BRAIN<br>
-        6. individually designed tiny fashionable hole – cawa (カワ)<br>
-        7. Art Teacher Feat. Bob Catt – Quay<br>
-        8. roses – bottom dog<br>
-        9. dance revolution – fri珍<br>
-        10. Life Spread Sheet (Opening) – Leftover Platters<br>
-        11. Canatoes ft. Burt Bacharach + Anne Laplantine – o . o துஈசிதிசி திஇல்<br>
-      </p>
+      <u>Tracklist</u>
+      <ol>
+        <li>-^] - J_JJJJJJJJJJJJ</li>
+        <li>sound adventure - emeraldclitoris</li>
+        <li>jnjnjnwavVRSPIUIMjnjnjnwavVRSP2 - Bug bus piano</li>
+        <li>sufo rabiaka bird with forbnl - துஈசிதிசி திஇல்டூ collabs</li>
+        <li>Acid Brain (Of Beethoven) - 脳BRAIN</li>
+        <li>individually designed tiny fashionable hole - cawa (カワ)</li>
+        <li>Art Teacher Feat. Bob Catt - Quay</li>
+        <li>roses - bottom dog</li>
+        <li>dance revolution - fri珍</li>
+        <li>Life Spread Sheet (Opening) - Leftover Platters</li>
+        <li>Canatoes ft. Burt Bacharach + Anne Laplantine - o . o துஈசிதிசி திஇல்</li>
+      </ol>
       <p>Total Time 35 min</p>
     </section>
-    <section class="info right">
-      <p>
-        <b>First Press</b>
-        2016.4.24
-        <br />
-        <b>Second Press</b>
-        2021.6.9
-      </p>
-      <p>
-        <b>review</b>
+    <aside>
+      <h2>
+        <u>First Press</u> <time>2016.4.24</time><br>
+        <u>Second Press</u> <time>2021.6.9</time><br>
+      </h2>
+      <p class="links">
+        <u>review</u>
         <a href="https://themassage.jp/archives/2222" target="_blank">massage</a>
       </p>
-    </section>
-    <article class="pr">
-      <iframe src="https://www.youtube.com/embed/BiXpyNuVvpY" title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
-      <section class="buy">
-        <p class="no">
-          Sales Price
-          <i>1200 JPY</i>
-          <br />Wholesale Price
-          <i>500 JPY</i>
-        </p>
-        <p class="order">
-          <a href="#">Order Now</a>
-        </p>
-        <p>
-          <b>Distributors</b>
-          <a href="???" target="_blank">???</a>
-        </p>
-      </section>
-    </article>
-  </main>
-  <button id="print" onclick="history.back(-1);return false;" type="button">↵</button>
+    </aside>
+  </article>
+
+  <form action="" method="">
+    <h3 class="no" id="sales">
+      Sales Price
+      <b>1200 JPY</b>
+    </h3>
+    <h3 class="no" id="wholesale">
+      Wholesale Price
+      <b>500 JPY</b>
+    </h3>
+    <button type="button">Buy Now</button>
+  </form>
+
+  <div id="player"></div>
+  <script>
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          videoId: 'BiXpyNuVvpY',
+          playerVars: {
+            'controls': 0
+          }
+        });
+      }
+  </script>
+  <script src="../js/youtube.js"></script>
+  
+  <!--
+  <aside id="dis" class="links">
+    <u>Distributors</u>
+    <a href="#" target="_blank">???</a>
+  </aside>
+  -->
+
 </body>
 
 </html>

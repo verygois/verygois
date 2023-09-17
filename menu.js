@@ -22,7 +22,7 @@ document.addEventListener('readystatechange', event => {
     const button = document.querySelector('#button');
     const menu = document.querySelector('#header menu');
     const body = document.body;
-    
+
     button.addEventListener('click', function () {
       button.classList.toggle('active');
       menu.classList.toggle('active');
