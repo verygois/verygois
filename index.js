@@ -17,15 +17,15 @@ function indexBody() {
 
     let progress = new Date(diff);
     if (progress.getUTCFullYear() - 1970) {
-      event.target.textContent = progress.getUTCFullYear() - 1970 + 'year ago';
+      event.target.textContent = progress.getUTCFullYear() - 1970 + ' year ago';
     } else if (progress.getUTCMonth()) {
-      event.target.textContent = progress.getUTCMonth() + 'month ago';
+      event.target.textContent = progress.getUTCMonth() + ' month ago';
     } else if (progress.getUTCDate() - 1) {
-      event.target.textContent = progress.getUTCDate() - 1 + 'day ago';
+      event.target.textContent = progress.getUTCDate() - 1 + ' day ago';
     } else if (progress.getUTCHours()) {
-      event.target.textContent = progress.getUTCHours() + 'hour ago';
+      event.target.textContent = progress.getUTCHours() + ' hour ago';
     } else if (progress.getUTCMinutes()) {
-      event.target.textContent = progress.getUTCMinutes() + 'minute ago';
+      event.target.textContent = progress.getUTCMinutes() + ' minute ago';
     } else {
       event.target.textContent = 'Just Now';
     }
