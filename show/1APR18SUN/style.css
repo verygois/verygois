@@ -1,0 +1,266 @@
+html {
+  font-size: 14px;
+  height: -webkit-fill-available;
+}
+
+@font-face {
+  font-family: "MS Mincho";
+  src: url("https://vg.pe.hu/1f/book/MSMincho.ttf");
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: url("https://vg.pe.hu/1f/book/times.ttf");
+}
+
+#cover {
+  text-stroke: 0.03rem #fff;
+  -webkit-text-stroke: 0.03rem #fff;
+}
+
+#info {
+  background: #fff9;
+  width: max-content;
+  max-width: calc(100% - 1rem);
+}
+
+article #pehu,
+aside i {
+  font-family: "MS Mincho", "SimSong", serif;
+}
+
+nav h2,
+nav h3,
+section,
+aside {
+  font-family: "Arial", "YuGothic", "Yu Gothic", sans-serif;
+}
+
+h1,
+section i,
+nav u:hover {
+  font-family: 'Times New Roman', 'Times', 'YuMincho', serif;
+}
+
+h1,
+section i,
+aside i {
+  font-style: italic;
+  letter-spacing: -0.05rem;
+}
+
+h1,
+#info details {
+  font-size: 200%;
+}
+
+#cover #pehu,
+#info p strong {
+  font-size: 150%;
+  line-height: 200%;
+}
+
+nav h2,
+nav h3,
+section i,
+aside a,
+aside i {
+  font-size: 125%;
+  line-height: 175%;
+}
+
+small,
+#info details p {
+  font-size: 75%;
+}
+
+u {
+  border-bottom: 1px solid;
+  display: inline-block;
+  font-size: 111%;
+  padding: 0.125rem 0;
+  margin: 0.25rem 0;
+  text-decoration: none;
+}
+
+nav u:hover {
+  border-bottom: 1px solid red;
+  cursor: pointer;
+  font-size: 125%;
+  font-style: italic;
+}
+
+h2,
+h3,
+#info p strong {
+  font-weight: 500;
+}
+
+body,
+article,
+h1,
+#video {
+  padding: 0;
+  margin: 0;
+}
+
+#menu,
+nav,
+section,
+aside,
+#info summary,
+#info p {
+  padding: 0.25rem;
+  margin: 0.5rem;
+}
+
+#cover aside p {
+  border: solid 1px;
+  text-align: center;
+  padding: 0.25rem 0.75rem;
+  margin: 0.25rem 0.25rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+article {
+  overflow: auto;
+  height: 100vh;
+  max-height: -webkit-fill-available;
+}
+
+#cover aside {
+  display: flex;
+  flex-flow: wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+article {
+  position: relative;
+  z-index: 1;
+}
+
+#info details {
+  margin-bottom: 1rem;
+}
+
+#menu,
+#video {
+  position: fixed;
+}
+
+#cover aside,
+#cover #pehu,
+#buttons {
+  position: absolute;
+}
+
+button,
+input[type="button"] {
+  appearance: none;
+  background: #fff9;
+  border: 0.01rem solid;
+  color: #000;
+  font-family: inherit;
+  font-weight: 500;
+  outline: none;
+}
+
+button:hover,
+input[type="button"]:hover {
+  cursor: pointer;
+  filter: invert(1);
+}
+
+input[type="button"] {
+  border: 0.01rem solid;
+  border-radius: 5rem;
+  font-size: 150%;
+  padding: 0.5rem 0.75rem;
+}
+
+button {
+  border: 0.01rem solid;
+  border-radius: 50%;
+  font-size: 150%;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+}
+
+#menu {
+  display: grid;
+  place-items: center;
+  top: 0;
+  right: 0;
+  font-size: 200%;
+  width: 3.21rem;
+  height: 3.21rem;
+  z-index: 5;
+}
+
+#cover aside,
+#buttons {
+  bottom: 0;
+  right: 0;
+}
+
+#cover #pehu,
+#video {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#cover #pehu {
+  display: grid;
+  place-items: center;
+  z-index: 0;
+}
+
+#cover #pehu {
+  border: solid 1px;
+  border-radius: 50%;
+  text-align: center;
+  width: 22.5rem;
+  height: 22.5rem;
+}
+
+@media (orientation: landscape) {
+  #video {
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+}
+
+@media (orientation: portrait) {
+  html {
+    font-size: 3.21vw;
+  }
+
+  #cover nav,
+  #cover aside,
+  #cover #pehu {
+    position: relative;
+    clear: both;
+  }
+
+  #cover #pehu {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  #cover aside {
+    float: right;
+  }
+
+  #video {
+    min-width: 100vh;
+    max-height: 100vw;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}

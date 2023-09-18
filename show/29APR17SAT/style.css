@@ -1,0 +1,117 @@
+html {
+  font-size: 16px;
+  height: -webkit-fill-available;
+  font-family: "Arial", "YuGothic", sans-serif;
+}
+
+body,
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+h1::after,
+h2::after,
+h3::after,
+hr {
+  border: none;
+  box-sizing: border-box;
+  content: "";
+  clear: both;
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 200%;
+  color: limegreen;
+}
+
+a {
+  color: blue;
+}
+
+aside b {
+  font-size: 125%;
+}
+
+article {
+  display: flex;
+  flex-flow: reverse nowrap;
+  justify-content: flex-start;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  height: 100vh;
+  max-height: -webkit-fill-available;
+}
+
+article section,
+article nav,
+article aside {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  padding: 1rem;
+  overflow: auto;
+  scroll-snap-align: start;
+  height: 100%;
+}
+
+article nav {
+  width: 50vw;
+  max-width: 300px;
+}
+
+article section {
+  width: 90vw;
+  max-width: 725px;
+}
+
+article section#info {
+  position: relative;
+  max-width: 1000px;
+}
+
+article aside {
+  width: 65vw;
+  max-width: 350px;
+}
+
+#info h1,
+#info h2,
+#info h3,
+#info p {
+  position: relative;
+  z-index: 1;
+}
+
+#info #map {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  max-width: 1000px;
+  height: 45vw;
+  max-height: 500px;
+  z-index: 0;
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 3vw;
+  }
+
+  article section,
+  article nav,
+  article aside {
+    padding: 2vw;
+  }
+
+  h1::after,
+  h2::after,
+  h3::after,
+  hr {
+    margin: 2vw 0;
+  }
+}

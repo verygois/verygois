@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <title>Very Gois</title>
+  <meta content="This is the List of Shows I organized." name="description">
+  <link rel="icon" href="/cv/icon/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../menu.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style type="text/css">
+    #header,
+    #header menu,
+    #header #button {
+      top: 0;
+    }
+
+    #art:checked~a:not(.art),
+    #music:checked~a:not(.music),
+    #hash:checked~a:not(.hash),
+    #su:checked~a:not(.su),
+    #one:checked~a:not(.one),
+    #two:checked~a:not(.two),
+    #etc:checked~a:not(.etc) {
+      opacity: 0;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    @media screen and (min-width: 500px) {
+      label[for="all"] {
+        float: right;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+
+      #art:checked~a:not(.art),
+      #music:checked~a:not(.music),
+      #hash:checked~a:not(.hash),
+      #su:checked~a:not(.su),
+      #one:checked~a:not(.one),
+      #two:checked~a:not(.two),
+      #etc:checked~a:not(.etc) {
+        font-size: 0;
+        padding: 0;
+        margin: 0;
+      }
+
+      #art:checked~a:not(.art) u,
+      #music:checked~a:not(.music) u,
+      #hash:checked~a:not(.hash) u,
+      #su:checked~a:not(.su) u,
+      #one:checked~a:not(.one) u,
+      #two:checked~a:not(.two) u,
+      #etc:checked~a:not(.etc) u,
+      #art:checked~a:not(.art) b,
+      #music:checked~a:not(.music) b,
+      #hash:checked~a:not(.hash) b,
+      #su:checked~a:not(.su) b,
+      #one:checked~a:not(.one) b,
+      #two:checked~a:not(.two) b,
+      #etc:checked~a:not(.etc) b {
+        display: none;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header"></header>
+  <main>
+    <form id="org">
+      <input id="art" type="radio" name="btn">
+      <label class="btn" for="art">exhibition</label>
+      <input id="music" type="radio" name="btn">
+      <label class="btn" for="music">concert</label>
+      <input id="hash" type="radio" name="btn">
+      <label class="btn" for="hash"># series</label>
+      <input id="etc" type="radio" name="btn">
+      <label class="btn" for="etc">Miscellaneous</label>
+      <input id="all" type="radio" name="btn" checked>
+      <label class="btn" for="all">View All</label>
+      <hr>
+    </form>
+  </main>
+  <script src="org.js"></script>
+  <script src="../menu.js"></script>
+</body>
+
+</html>
