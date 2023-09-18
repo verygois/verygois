@@ -17,17 +17,17 @@ function indexBody() {
 
     let progress = new Date(diff);
     if (progress.getUTCFullYear() - 1970) {
-      event.target.textContent = progress.getUTCFullYear() - 1970 + '年前';
+      event.target.textContent = progress.getUTCFullYear() - 1970 + 'year ago';
     } else if (progress.getUTCMonth()) {
-      event.target.textContent = progress.getUTCMonth() + 'ヶ月前';
+      event.target.textContent = progress.getUTCMonth() + 'month ago';
     } else if (progress.getUTCDate() - 1) {
-      event.target.textContent = progress.getUTCDate() - 1 + '日前';
+      event.target.textContent = progress.getUTCDate() - 1 + 'day ago';
     } else if (progress.getUTCHours()) {
-      event.target.textContent = progress.getUTCHours() + '時間前';
+      event.target.textContent = progress.getUTCHours() + 'hour ago';
     } else if (progress.getUTCMinutes()) {
-      event.target.textContent = progress.getUTCMinutes() + '分前';
+      event.target.textContent = progress.getUTCMinutes() + 'minute ago';
     } else {
-      event.target.textContent = 'たった今';
+      event.target.textContent = 'Just Now';
     }
   });
 }
