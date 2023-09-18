@@ -27,7 +27,7 @@ function indexBody() {
     } else if (progress.getUTCMinutes()) {
       event.target.textContent = progress.getUTCMinutes() + ' minute ago';
     } else {
-      event.target.textContent = 'Just Now';
+      event.target.textContent = 'now';
     }
   });
 }
