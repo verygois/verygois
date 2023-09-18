@@ -31,8 +31,13 @@ form button {
     text-align: center;
     padding-top: 0.25rem;
     margin-top: 0.5rem;
-    outline: solid #000 0.125rem;
+    outline: solid #fff 0.125rem;
     width: 100%;
+}
+
+form button:hover {
+    cursor: pointer;
+    filter: invert();
 }
 
 .no {

@@ -19,10 +19,19 @@ main,
   padding: 0;
 }
 
+#cover,
+#description {
+  font-family: 'Great Vibes', cursive;
+}
+
+#compilation,
+footer {
+  font-family: "Arial Narrow", Arial, sans-serif;
+}
+
 #cover {
   display: grid;
   place-items: center;
-  font-family: 'Great Vibes', cursive;
   font-size: 10vh;
   font-weight: 500;
   position: relative;
@@ -40,7 +49,6 @@ main,
 }
 
 #compilation {
-  font-family: "Arial Narrow", Arial, sans-serif;
   font-size: 16px;
   margin: -15vh auto 1rem;
   width: 90%;
@@ -50,6 +58,7 @@ main,
 #compilation p b {
   background: #000;
   color: #fff;
+  font-size: 95%;
   font-weight: 500;
   padding: 0.25rem;
 }
@@ -93,6 +102,13 @@ main,
   max-width: 1000px;
 }
 
+#description {
+  margin-top: 2.5rem;
+  line-height: 100%;
+  transform: scale(1, 2.5);
+  transform-origin: center;
+}
+
 @media screen and (max-width: 750px) {
   #cover {
     font-size: 17vw;
@@ -111,12 +127,13 @@ main,
   }
 
   #compilation a b {
-    font-size: 125%;
+    font-size: 111%;
+    vertical-align: baseline;
   }
 
   #compilation a img {
-    width: 1.75rem;
-    vertical-align:baseline;
+    width: 1.55rem;
+    vertical-align: baseline;
   }
 
   #one #contents #title {
