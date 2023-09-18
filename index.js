@@ -1,7 +1,7 @@
 'use strict'
 
 function indexBody() {
-  const thisTitle = document.querySelector('title').textContent
+  const thisTitle = document.title
   document.querySelector('#title').textContent = thisTitle;
 
   const thisDescription = document.querySelector('meta[name="description"]').content;
