@@ -48,7 +48,8 @@ main,
 
 #compilation {
   font-size: 16px;
-  margin: -15vh auto 1rem;
+  padding-bottom: 2.5rem;
+  margin: -15vh auto 0;
   width: 90%;
   max-width: 650px;
 }
@@ -95,7 +96,7 @@ main,
 
 #one #contents #title {
   font-size: 125%;
-  padding: 2.5rem 2.5rem 0;
+  padding: 1rem 2.5rem 0;
   margin: auto;
   max-width: 1000px;
 }
@@ -130,7 +131,7 @@ main,
   #one #contents #title {
     font-size: 4.5vw;
     margin: auto;
-    padding: 7.5vw 5% 0;
+    padding: 2.5vw 5% 0;
   }
 }
 
