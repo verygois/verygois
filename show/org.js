@@ -5,7 +5,6 @@ async function indexJSON() {
   const request = new Request(requestURL);
   const response = await fetch(request);
   const jsonIndex = await response.text();
-
   const index = JSON.parse(jsonIndex);
   contentAll(index);
 }
@@ -13,7 +12,6 @@ async function indexJSON() {
 function contentAll(obj) {
   const list = document.querySelector('#contents');
   const items = obj.contents;
-
   for (const item of items) {
     const itemA = document.createElement('a');
     const itemDate = document.createElement('u');
