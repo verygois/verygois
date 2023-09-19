@@ -129,9 +129,7 @@ main,
   }
 
   #one #contents #title {
-    font-size: 4.5vw;
-    margin: auto;
-    padding: 2.5vw 5% 0;
+    padding: 0 5%;
   }
 }
 
