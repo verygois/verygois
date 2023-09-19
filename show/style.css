@@ -53,10 +53,6 @@
 }
 
 @media screen and (min-width: 500px) {
-    #org {
-        margin: 10vw auto 0;
-    }
-
     label[for="all"] {
         float: right;
         margin: 0.125rem 0;

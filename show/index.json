@@ -1,29 +1,4 @@
 {
-  "title" : "Show",
-
-  "org" : [
-    {
-      "id" : "art",
-      "name" : "exhibition"
-    },
-    {
-      "id" : "music",
-      "name" : "concert"
-    },
-    {
-      "id" : "hash",
-      "name" : "# series"
-    },
-    {
-      "id" : "etc",
-      "name" : "Miscellaneous"
-    },
-    {
-      "id" : "all",
-      "name" : "View All"
-    }
-  ],
-
   "contents" : [
     {
       "date" : "2022.01.15 - 01.30",
@@ -37,14 +12,14 @@
       "name" : "Tongue finishes back at the root of itself",
       "about" : "by Ferran Pla, Ana Martinez Fernandez",
       "url" : "/2f/finishes.html",
-      "class" : "art two"
+      "class" : "art"
     },
     {
       "date" : "2019.07.19 - 08.13",
       "name" : "Green People",
       "about" : "by Laurel Schwulst, Elliott Cost",
       "url" : "/2f/greenpeople.html",
-      "class" : "art two"
+      "class" : "art"
     },
     {
       "date" : "2019.07.09 8pm -",
@@ -58,14 +33,14 @@
       "name" : "FS1",
       "about" : "by 天気, 🐴",
       "url" : "/2f/fs1.html",
-      "class" : "two etc"
+      "class" : "etc"
     },
     {
       "date" : "2019.05.27 - 06.08",
       "name" : "NS1",
       "about" : "by Nicholas Strobelt, Joseph Torres, Yuu Takamizawa",
       "url" : "/2f/ns1.html",
-      "class" : "art two"
+      "class" : "art"
     },
     {
       "date" : "2019.05.26 -",
@@ -86,35 +61,35 @@
       "name" : "Best Friends from France 2019",
       "about" : "by Jean-Philippe Bretin, Vanessa Dziuba | Sammy Stein, Séverine Bascouert (L'Institut Sérigraphique)",
       "url" : "/2f/bff.html",
-      "class" : "art two"
+      "class" : "art"
     },
     {
       "date" : "2019.02.04 - 02.16",
       "name" : "NS 5",
       "about" : "Niceshop Su 5th anniversary exhibition",
       "url" : "/2f/ns5.html",
-      "class" : "art two"
+      "class" : "art"
     },
     {
       "date" : "2019.02.04 - 02.16",
       "name" : "MS1",
       "about" : "by Isshuumawattetsurai, Mizuho Kuki, Rina Cho",
       "url" : "/2f/ms1.html",
-      "class" : "art two"
+      "class" : "art"
     },
     {
       "date" : "2019.01.26 - 01.27",
       "name" : "HF+S1",
       "about" : "by Masami Baba, Nobuto Okawahara, Gaku Kurokawa, Shoji Funakawa",
       "url" : "/2f/hf1.html",
-      "class" : "art two"
+      "class" : "art"
     },
     {
       "date" : "2019.01.07 - 01.19",
       "name" : "TWS 1",
       "about" : "by Fumio Kohama, Stefan Alexander, Shintaro Matsuo",
       "url" : "/2f/tws1.html",
-      "class" : "art two"
+      "class" : "art"
     },
     {
       "date" : "2018.11.20 - 11.30",
@@ -163,7 +138,7 @@
       "name" : "快晴 東京",
       "about" : "at CORNER PRINTING KG",
       "url" : "https://www.kg-cornerprinting.com/kaisei-tokyo",
-      "class" : "art su"
+      "class" : "art"
     },
     {
       "date" : "2018.05.17 - 06.02",
@@ -177,7 +152,7 @@
       "name" : "快晴",
       "about" : "A new generation of japanese artists",
       "url" : "/1f/kaisei/",
-      "class" : "art one"
+      "class" : "art"
     },
     {
       "date" : "2018.04.07 4 - 8pm",
@@ -198,35 +173,35 @@
       "name" : "00",
       "about" : "by Nice shop su",
       "url" : "/1f/00/",
-      "class" : "one"
+      "class" : "art"
     },
     {
       "date" : "2018.03.05 - 03.18",
       "name" : "05",
       "about" : "by Laurel Schwulst, Woopheadclrms",
       "url" : "/1f/05/",
-      "class" : "art one"
+      "class" : "art"
     },
     {
       "date" : "2018.02.19 - 02.28",
       "name" : "04",
       "about" : "by emeraldclitoris",
       "url" : "/1f/04/",
-      "class" : "art one"
+      "class" : "art"
     },
     {
       "date" : "2018.01.12 - 01.24",
       "name" : "03",
       "about" : "by Takamitsu Ohta, Muku Kobayashi, Shoji Funakawa, Soshi Matsunobe",
       "url" : "/1f/03/",
-      "class" : "art one"
+      "class" : "art"
     },
     {
       "date" : "2018.01.12 - 01.24",
       "name" : "02",
       "about" : "by Sarah Marshall, Natalia Panzer",
       "url" : "/1f/02/",
-      "class" : "art one"
+      "class" : "art"
     },
     {
       "date" : "2018.01.06 6pm -",
@@ -240,7 +215,7 @@
       "name" : "01",
       "about" : "by 斎藤玲児, 0100011110001",
       "url" : "/1f/01/",
-      "class" : "art one"
+      "class" : "art"
     },
     {
       "date" : "2017.11.25 8pm -",
