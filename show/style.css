@@ -4,7 +4,67 @@
     top: 0;
 }
 
+#org {
+    margin: 3rem auto 0;
+    width: 100%;
+}
+
+#org label {
+    color: #000;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    text-shadow: 0.1rem 0.1rem #fff;
+}
+
+#org label:hover,
+#org input[type="radio"]:checked+label {
+    color: #fff;
+    background-color: #eee;
+    text-shadow: 0.1rem 0.1rem #000;
+}
+
+#contents a {
+    color: blue;
+}
+
+#contents a u,
+#contents a b,
+#contents a span {
+    margin: 0 0.25rem 0 0;
+}
+
+#contents a u {
+    background: blue;
+    color: #fff;
+    display: inline-block;
+    padding: 0.125rem;
+    text-decoration: none;
+}
+
+#contents a b,
+#contents a span {
+    line-height: 175%;
+}
+
+@media (orientation: portrait) {
+    #org {
+        margin: 10vw auto 0;
+    }
+
+    #contents a.hidden u,
+    #contents a.hidden b,
+    #contents a.hidden span {
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
 @media screen and (min-width: 500px) {
+    #org {
+        margin: 10vw auto 0;
+    }
+
     label[for="all"] {
         float: right;
         margin: 0.125rem 0;
