@@ -20,8 +20,16 @@ body {
 
 h1 b,
 h3 strong,
-#main section p {
+#main section p,
+summary:hover,
+details .list li:hover::after,
+#closeButton {
   color: gold;
+}
+
+summary:hover,
+button:hover {
+  cursor: pointer;
 }
 
 h1 b,
@@ -121,7 +129,9 @@ aside h3 {
 
 #main section h3,
 aside h3,
-details summary {
+details summary,
+details .list li:hover::after,
+#closeButton {
   font-size: 200%;
 }
 
@@ -259,12 +269,6 @@ details ul li {
 
 details .list li:hover {
   cursor: help;
-}
-
-details .list li:hover::after,
-#closeButton {
-  color: gold;
-  font-size: 200%;
 }
 
 details .list li:hover::after {
