@@ -7,6 +7,13 @@ html {
   box-sizing: border-box;
 }
 
+button {
+  appearance: none;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
 body {
   background: whitesmoke;
 }
@@ -26,7 +33,8 @@ details summary {
   font-weight: 500;
 }
 
-details {
+details,
+#modal {
   font-family: "Yu Mincho", "YuMincho", "游明朝", "Times New Roman", Times, serif;
 }
 
@@ -59,9 +67,14 @@ h1,
 h2,
 h3,
 h4,
-details::after {
+details::after,
+button {
   padding: 0;
   margin: 0;
+}
+
+#closeButton {
+  float: right;
 }
 
 hr {
@@ -248,10 +261,14 @@ details .list li:hover {
   cursor: help;
 }
 
-details .list li:hover::after {
-  content: "?";
+details .list li:hover::after,
+#closeButton {
   color: gold;
   font-size: 200%;
+}
+
+details .list li:hover::after {
+  content: "?";
   position: absolute;
   top: 0.5rem;
   right: 1rem;
@@ -269,6 +286,11 @@ details iframe {
   margin-right: 1rem;
   width: 50%;
   height: 27.5vw;
+}
+
+#modal {
+  width: 75%;
+  max-width: 550px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -305,5 +327,29 @@ details iframe {
     margin-bottom: 1rem;
     width: 100%;
     height: 55vw;
+  }
+}
+
+@page {
+  size: landscape;
+}
+
+@media print {
+  html {
+    font-size: 1.9vw;
+  }
+
+  marquee,
+  details:not(.bm),
+  iframe {
+    display: none;
+  }
+
+  #main {
+    background-size: 55%;
+  }
+
+  .bm {
+    height: calc(50vh - 0.5rem);
   }
 }
