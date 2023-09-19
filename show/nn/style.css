@@ -5,7 +5,8 @@ html {
 }
 
 main {
-  background: #000;
+  background: 50% 50% / cover #000;
+  background-image: url("cover.png");
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -40,7 +41,7 @@ header {
 
 @font-face {
   font-family: "MS Mincho";
-  src: url("/fonts/family/MSMincho.ttf");
+  src: url("https://vg.pe.hu/fonts/family/MSMincho.ttf");
 }
 
 h1 {
@@ -107,17 +108,9 @@ header h1 {
 }
 
 #main {
-  background: 50% 50% / cover #fff;
-  background-image: url("cover.png");
+  border: none;
   width: 100%;
   height: calc(100% - 4.5rem);
-}
-
-#main iframe {
-  border: none;
-  background: #000;
-  width: 100%;
-  height: 100%;
 }
 
 footer {

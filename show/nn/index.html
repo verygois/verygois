@@ -30,7 +30,7 @@
       <h2><input type="button" value="場所ん"></h2>
       <p>34°41'25.1"N 135°30'51.0"E</p>
     </header>
-    <div id="main"></div>
+    <iframe id="main"></iframe>
     <footer>
       <div class="left">
         <button type="button">
@@ -46,18 +46,18 @@
       </div>
     </footer>
   </main>
-  <article hidden>
-    <section>
-      <h1>同意書</h1>
-      <p>聖なる菊んの義に参加するにあたり、下記の内容に同意します。</p>
-      <ol>
-        <li>会場となる場所んへの立ち入りの全責任は主催者に託す。</li>
-        <li>中止、中断が決断された場合は速やかに解散する。</li>
-        <li>苦情・通報などがあった（または疑いがある）場合、直ちに主催者へ報告する。</li>
-      </ol>
-      <p>以上に同意できない方は、ご来場をお控えください。</p>
-    </section>
-  </article>
+  
+  <dialog id="modal">
+    <button type="button" id="closeButton">×</button>
+    <h3>同意書</h3>
+    <p>聖なる菊んの義に参加するにあたり、下記の内容に同意します。</p>
+    <ol>
+      <li>会場となる場所んへの立ち入りの全責任は主催者に託す。</li>
+      <li>中止、中断が決断された場合は速やかに解散する。</li>
+      <li>苦情・通報などがあった（または疑いがある）場合、直ちに主催者へ報告する。</li>
+    </ol>
+    <p>以上に同意できない方は、ご来場をお控えください。</p>
+  </dialog>
   <script src="script.js"></script>
 </body>
 
