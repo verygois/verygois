@@ -1,19 +1,35 @@
 'use strict'
 
-let day1 = document.querySelector('.left button'),
-  day2 = document.querySelector('.right button'),
-  main = document.querySelector('main'),
+let main = document.querySelector('main'),
   iframe = document.querySelector('#main'),
+  day1 = document.querySelector('.left button'),
+  day2 = document.querySelector('.right button'),
   nn = document.querySelector('header input[type="button"]'),
   h1 = document.querySelector('h1'),
   about = document.querySelector('header p');
+
+const dialogModal = document.querySelector('#modal');
+const openModal = document.querySelector('#openModal');
+
+function onModal() {
+  if (typeof dialogModal.showModal === "function") {
+    dialogModal.showModal();
+  } else {
+    alert("The <dialog> API is not supported by this browser");
+  }
+}
 
 nn.addEventListener('click', function () {
   h1.innerText = "聖なる菊んの儀";
   main.style.background = "50% 50% / contain";
   main.style.backgroundImage = "url('000.png')";
-  iframe.src = "";
-  about.innerHTML = "";
+  about.innerHTML = `34°41'25.1"N 135°30'51.0"E`;
+  onModal()
+});
+
+const closeButton = document.querySelector('#closeButton');
+closeButton.addEventListener('click', () => {
+  dialogModal.close();
 });
 
 day1.addEventListener('click', function () {
@@ -27,8 +43,8 @@ day2.addEventListener('click', function () {
   h1.innerText = "1 0 × 1 0 l i v e";
   about.innerText = "バッファローマッキーによる10分×10回ライブ";
   iframe.src = "https://player.vimeo.com/video/90674476?h=2ae0413e57&title=0&byline=0&portrait=0";
-  iframe.setAttribute("allow","autoplay; fullscreen; picture-in-picture");
-  iframe.setAttribute("allowfullscreen","true");
+  iframe.setAttribute("allow", "autoplay; fullscreen; picture-in-picture");
+  iframe.setAttribute("allowfullscreen", "true");
   ago('2014/03/30 21:00:00');
 });
 

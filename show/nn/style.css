@@ -4,34 +4,54 @@ html {
   height: -webkit-fill-available;
 }
 
-main {
-  background: 50% 50% / cover #000;
-  background-image: url("cover.png");
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  max-height: -webkit-fill-available;
-}
-
 * {
   box-sizing: border-box;
-}
-
-header {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 body,
 main,
 #main,
-#main iframe,
 footer,
 footer div {
   padding: 0;
   margin: 0;
+}
+
+body {
+  background: 50% 50% / cover #000;
+  background-image: url("cover.png");
+  width: 100%;
+  height: 100vh;
+  max-height: -webkit-fill-available;
+}
+
+main,
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+header,
+footer,
+#main {
+  position: absolute;
+}
+
+header,
+#main {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header,
+footer {
+  z-index: 1;
+}
+
+#main {
+  border: none;
+  z-index: 0;
 }
 
 header {
@@ -84,7 +104,8 @@ input[type="button"] {
   outline: none;
 }
 
-button {
+button,
+#modal a {
   background: #000;
   color: #fff;
   font-size: 75%;
@@ -98,6 +119,7 @@ input[type="button"] {
 }
 
 button:hover,
+#modal a:hover,
 input[type="button"]:hover {
   cursor: help;
   filter: invert();
@@ -107,21 +129,12 @@ header h1 {
   writing-mode: vertical-lr;
 }
 
-#main {
-  border: none;
-  width: 100%;
-  height: calc(100% - 4.5rem);
-}
-
 footer {
   color: #fff;
   display: flex;
   flex-flow: wrap;
-  height: 4.5rem;
-}
-
-footer div {
-  width: 50%;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .left {
@@ -130,6 +143,18 @@ footer div {
 
 .right {
   text-align: right;
+}
+
+#closeButton {
+  float: right;
+}
+
+#modal h3::after {
+  content: "";
+  clear: both;
+  display: block;
+  margin: 1rem;
+  width: 100%;
 }
 
 @media screen and (max-width: 550px) {
@@ -155,12 +180,12 @@ footer div {
   button {
     margin: 2vw;
   }
+}
 
+@media (orientation: portrait) {
   #main {
-    height: calc(100% - 15vw);
-  }
-
-  footer {
-    height: 15vw;
+    min-width: 100vh;
+    max-height: 100vw;
+    transform: translate(-50%, -50%) rotate(-90deg);
   }
 }
