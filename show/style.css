@@ -4,7 +4,11 @@
     top: 0;
 }
 
-#org {
+body {
+    font-family: "Arial Narrow", "Arial", sans-serif;
+  }
+  
+  #org {
     margin: 3rem auto 0;
     width: 100%;
 }
