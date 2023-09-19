@@ -7,28 +7,7 @@ async function indexJSON() {
   const jsonIndex = await response.text();
 
   const index = JSON.parse(jsonIndex);
-  indexORG(index);
   contentAll(index);
-}
-
-function indexORG(obj) {
-  const orgForm = document.querySelector('#org');
-  const orgAll = obj.org;
-
-  for (const org of orgAll) {
-    const orgInput = document.createElement('input');
-    orgInput.setAttribute('type', 'radio')
-    orgInput.setAttribute('name', 'filter')
-    orgInput.id = org.id;
-    orgInput.value = org.id;
-
-    const orgLabel = document.createElement('label');
-    orgLabel.setAttribute('for', org.id);
-    orgLabel.textContent = org.name;
-
-    orgForm.appendChild(orgInput);
-    orgForm.appendChild(orgLabel);
-  }
 }
 
 function contentAll(obj) {

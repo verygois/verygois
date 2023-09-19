@@ -23,7 +23,18 @@
 <body>
   <header id="header"></header>
   <main>
-    <form id="org"></form>
+    <form id="org">
+      <input id="art" value="art" type="radio" name="btn">
+      <label for="art">exhibition</label>
+      <input id="music" value="music" type="radio" name="btn">
+      <label for="music">concert</label>
+      <input id="hash" value="hash" type="radio" name="btn">
+      <label for="hash"># series</label>
+      <input id="etc" value="etc" type="radio" name="btn">
+      <label for="etc">Miscellaneous</label>
+      <input id="all" value="all" type="radio" name="btn" checked>
+      <label for="all">View All</label>
+    </form>
     <div id="contents"></div>
   </main>
 </body>
