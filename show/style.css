@@ -50,14 +50,6 @@
     #org {
         margin: 10vw auto 0;
     }
-
-    #contents a.hidden u,
-    #contents a.hidden b,
-    #contents a.hidden span {
-        display: none;
-        padding: 0;
-        margin: 0;
-    }
 }
 
 @media screen and (min-width: 500px) {
@@ -68,5 +60,13 @@
     label[for="all"] {
         float: right;
         margin: 0.125rem 0;
+    }
+
+    #contents a.hidden u,
+    #contents a.hidden b,
+    #contents a.hidden span {
+        display: none;
+        padding: 0;
+        margin: 0;
     }
 }
