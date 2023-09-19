@@ -1,13 +1,13 @@
 'use strict'
 
 let day1 = document.querySelector('.left button'),
-day2 = document.querySelector('.right button'),
-main = document.querySelector('#main'),
-nn = document.querySelector('header input[type="button"]'),
-h1 = document.querySelector('h1'),
-about = document.querySelector('header p');
+  day2 = document.querySelector('.right button'),
+  main = document.querySelector('#main'),
+  nn = document.querySelector('header input[type="button"]'),
+  h1 = document.querySelector('h1'),
+  about = document.querySelector('header p');
 
-nn.addEventListener('click', function() {
+nn.addEventListener('click', function () {
   h1.innerText = "聖なる菊んの儀"
   main.innerText = ""
   main.style.background = "50% 50% / contain"
@@ -17,7 +17,7 @@ nn.addEventListener('click', function() {
   `
 });
 
-day1.addEventListener('click', function() {
+day1.addEventListener('click', function () {
   h1.innerText = "TEXT SEX"
   about.innerText = "エメラルドクリトリスによる即興サウンドノベル"
   main.innerHTML = `
@@ -26,7 +26,7 @@ day1.addEventListener('click', function() {
   ago('2014/03/29 13:00:00')
 });
 
-day2.addEventListener('click', function() {
+day2.addEventListener('click', function () {
   h1.innerText = "1 0 × 1 0 l i v e"
   about.innerText = "バッファローマッキーによる10分×10回ライブ"
   main.innerHTML = `

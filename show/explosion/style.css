@@ -1,5 +1,5 @@
 html {
-  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  font-family: 'Kosugi Maru', sans-serif;
   font-size: 16px;
 }
 
@@ -31,12 +31,6 @@ hr {
   box-sizing: border-box;
 }
 
-h1,
-.title,
-time {
-  font-family: 'Kosugi Maru', sans-serif;
-}
-
 h2,
 summary,
 aside strong {
@@ -63,7 +57,7 @@ time {
 }
 
 h1,
-h2{
+h2 {
   padding: 0;
   margin: 0;
 }

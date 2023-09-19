@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
+
+  <!--og:meta-->
+  <meta content="website" property="og:type">
   <title>｣ﾚ ｨ ﾉヾ ─ 廾 ｽ</title>
-  <meta name="description" content="by 川染喜弘, 小林亮平, emamouse, fri珍, 脳BRAIN, 51.3 G-WAVE">
+  <meta content="｣ﾚ ｨ ﾉヾ ─ 廾 ｽ" property="og:title">
+  <meta content="by 川染喜弘, 小林亮平, emamouse, fri珍, 脳BRAIN, 51.3 G-WAVE" name="description">
+  <meta content="by 川染喜弘, 小林亮平, emamouse, fri珍, 脳BRAIN, 51.3 G-WAVE" name="og:description">
+
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://vg.pe.hu/show/lv/" property="og:url">
+  <meta content="https://vg.pe.hu/show/lv/cover.jpeg" property="og:image">
+  <meta content="https://vg.pe.hu/show/lv/cover.jpeg" name="twitter:image:src">
+
   <link rel="icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=IBM+Plex+Sans+Condensed:ital,wght@0,300;0,400;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
 </head>
+
 <body>
   <article>
     <h1 id="title">｣ ﾚ ｨ ﾉ ヾ ─ 廾 ｽ</h1>
@@ -28,11 +42,11 @@
     </section>
     <section id="text">
       <h2>
-        オフィシャルフィンガーバンド<br/>
+        オフィシャルフィンガーバンド<br />
       </h2>
       <p><a class="buy" href="#">500JPN</a> (+shipping cost)</p>
       <p>
-        <small>1000 Limited Qty</small><br/>
+        <small>1000 Limited Qty</small><br />
         <small>
           Illustration by
           <a href="https://www.instagram.com/nanoooook/" target="_blank" rel="nofollow noreferrer">nanook</a>
@@ -52,22 +66,23 @@
     </section>
   </article>
   <aside>
-    ***
+    <span>***</span>
   </aside>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script>
-  $(function () {
-    $(window).scroll(function () {
-      var y = $(this).scrollTop();
-      var scale1 = y * 0.0015 + 0.1;
-      $("#act").css('transform', 'scale(' + scale1 + ')');
-      $("#act").css('transform', 'rotate(' + y + 'deg) scale(' + scale1 + ')');
-      var scale2 = y * (-0.001) + 2;
-      $("#text").css('transform', 'scale(' + scale2 + ')');
-      var rotate1 = y * (-0.002) + 0.5;
-      $("#info").css('transform', 'rotate(' + y + 'deg) scale(' + rotate1 + ')');
+    $(function () {
+      $(window).scroll(function () {
+        var y = $(this).scrollTop();
+        var scale1 = y * 0.0015 + 0.1;
+        $("#act").css('transform', 'scale(' + scale1 + ')');
+        $("#act").css('transform', 'rotate(' + y + 'deg) scale(' + scale1 + ')');
+        var scale2 = y * (-0.001) + 2;
+        $("#text").css('transform', 'scale(' + scale2 + ')');
+        var rotate1 = y * (-0.002) + 0.5;
+        $("#info").css('transform', 'rotate(' + y + 'deg) scale(' + rotate1 + ')');
+      });
     });
-  });
   </script>
 </body>
+
 </html>

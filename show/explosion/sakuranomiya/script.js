@@ -1,21 +1,21 @@
 'use strict'
 
 let mapBtn = document.querySelector('#access'),
-actBtn = document.querySelector('#act'),
-article = document.querySelector('#main'),
-nav = document.querySelector('#main nav'),
-section = document.querySelector('#main section'),
-map = document.querySelector('#map img'),
-main = document.querySelector('main'),
-mainBtn = document.querySelector('main h1 button');
+  actBtn = document.querySelector('#act'),
+  article = document.querySelector('#main'),
+  nav = document.querySelector('#main nav'),
+  section = document.querySelector('#main section'),
+  map = document.querySelector('#map img'),
+  main = document.querySelector('main'),
+  mainBtn = document.querySelector('main h1 button');
 
 
-mapBtn.addEventListener('click', function() {
+mapBtn.addEventListener('click', function () {
   map.style.opacity = "1";
   actBtn.style.display = "none"
   nav.style.display = "none"
   section.style.display = "none"
-  window.setTimeout(function(){
+  window.setTimeout(function () {
     map.style.opacity = "0";
     actBtn.style.display = "block"
     nav.style.display = "block"
@@ -23,12 +23,12 @@ mapBtn.addEventListener('click', function() {
   }, 5000);
 });
 
-actBtn.addEventListener('click', function() {
+actBtn.addEventListener('click', function () {
   article.style.display = "none"
   main.style.display = "block"
 });
 
-mainBtn.addEventListener('click', function() {
+mainBtn.addEventListener('click', function () {
   article.style.display = "flex"
   main.style.display = "none"
 });

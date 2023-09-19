@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +12,12 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script type="text/javascript" src="../jquery.arctext.js"></script>
   <style>
-  #cover {
-    background-image: url("000.jpg");
-  }
+    #cover {
+      background-image: url("000.jpg");
+    }
   </style>
 </head>
+
 <body>
   <article>
     <header id="title">
@@ -28,8 +30,8 @@
       <h2>会場:ナイスショップスー</h2>
       <p>会期:2014年6月21日(土) - 7月6日(日)</p>
       <p>
-      <time>平日15時から20時</time>
-      <time>土日12時から21時</time>
+        <time>平日15時から20時</time>
+        <time>土日12時から21時</time>
       </p>
     </section>
     <aside id="book"></aside>
@@ -37,42 +39,43 @@
     <hr>
   </article>
   <script type="text/javascript">
-  $('#example1').arctext({radius: 400});
+    $('#example1').arctext({ radius: 400 });
 
-  let pooh = {
-    '001.jpeg':'プーティーさんとフキンさん',
-    '002.jpg':'おぼこさんと短冊',
-    '003.jpg':'いくちゃんとプー',
-    '004.jpg':'ドマさんたち',
-    '005.jpg':'POOH JAY',
-    '006.jpg':'KENTOM',
-    '007.jpg':'プーたち',
-    '008.jpg':'羽束師プー',
-    '009.jpg':'焼肉298'
-  };
+    let pooh = {
+      '001.jpeg': 'プーティーさんとフキンさん',
+      '002.jpg': 'おぼこさんと短冊',
+      '003.jpg': 'いくちゃんとプー',
+      '004.jpg': 'ドマさんたち',
+      '005.jpg': 'POOH JAY',
+      '006.jpg': 'KENTOM',
+      '007.jpg': 'プーたち',
+      '008.jpg': '羽束師プー',
+      '009.jpg': '焼肉298'
+    };
 
-  const cover = document.querySelector("#cover"),
-  article = document.querySelector("article");
-  cover.addEventListener("click", function() {
-    cover.style.display = "none"
-    article.style.backgroundImage = "url('cover.png')";
-    window.setInterval(function () {
-      nextBG(pooh, 'article')
-    }, 2000);
-  }, false);
+    const cover = document.querySelector("#cover"),
+      article = document.querySelector("article");
+    cover.addEventListener("click", function () {
+      cover.style.display = "none"
+      article.style.backgroundImage = "url('cover.png')";
+      window.setInterval(function () {
+        nextBG(pooh, 'article')
+      }, 2000);
+    }, false);
 
 
-  num = 0;
-  function nextBG(imgArr, query = '') {
-    if(num >= Object.entries(imgArr).length - 1) {
-      num = 0;
-    } else {
-      num++;
+    num = 0;
+    function nextBG(imgArr, query = '') {
+      if (num >= Object.entries(imgArr).length - 1) {
+        num = 0;
+      } else {
+        num++;
+      }
+      let thisIMG = Object.entries(imgArr)[num];
+      document.querySelector(query).style.backgroundImage = `url("${thisIMG[0]}")`
     }
-    let thisIMG = Object.entries(imgArr)[num];
-    document.querySelector(query).style.backgroundImage = `url("${thisIMG[0]}")`
-  }
   </script>
   <script type="text/javascript" src="../script.js"></script>
 </body>
+
 </html>

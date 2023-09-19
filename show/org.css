@@ -1,0 +1,103 @@
+body {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#org {
+  font-family: "Arial Narrow", "Arial", sans-serif;
+}
+
+#org .btn {
+  transition: 1.5s all;
+}
+
+#org .btn:hover {
+  cursor: pointer;
+  transition: .5s all;
+}
+
+#org .btn {
+  color: #000;
+  background-color: #fff;
+  text-shadow: 0.1rem 0.1rem #fff;
+}
+
+#org .btn:hover,
+#org input[type="radio"]:checked+.btn {
+  color: #fff;
+  background-color: #eee;
+  text-shadow: 0.1rem 0.1rem #000;
+}
+
+hr {
+  clear: both;
+  border: none;
+}
+
+#org input[type="radio"] {
+  display: none;
+}
+
+#org {
+  padding: 0.75rem;
+  margin: 3rem auto 0;
+  width: 100%;
+}
+
+#org .btn {
+  display: inline-block;
+  border-radius: 0.5rem;
+  font-size: 100%;
+  padding: 0.25rem;
+  margin: 0.125rem 0.25rem 0.125rem 0;
+  text-transform: capitalize;
+}
+
+#org a {
+  border-bottom: solid 1px;
+  color: blue;
+  text-decoration: none;
+  transition: 1s;
+  line-height: 150%;
+  padding: 0.5rem 0 0.125rem;
+  margin: 0.5rem 0.5rem 1rem 0;
+}
+
+#org a .date {
+  background: blue;
+  color: #fff;
+  display: inline-block;
+  padding: 0 0.125rem;
+  margin: 0 0.5rem 0 0;
+  text-decoration: none;
+}
+
+#org a .title {
+  padding: 0 0.5rem 0 0;
+}
+
+#org a .title,
+#org a .info {
+  line-height: 175%;
+}
+
+@media (orientation: portrait) {
+  #org {
+    margin: 10vw auto 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #org {
+    margin: 10vw auto 0;
+  }
+
+  html {
+    font-size: 4vw;
+  }
+}

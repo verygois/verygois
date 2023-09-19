@@ -268,7 +268,7 @@ aside ol {
 
 aside ol li {
   list-style: none inside;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem 0;
 }
 
 aside ol li::before,
@@ -297,7 +297,7 @@ aside ol li span {
 
 aside ol li::before {
   counter-increment: day;
-  content: "Day " counter( day, decimal );
+  content: "Day " counter(day, decimal);
   display: inline-block;
   font-style: italic;
   font-weight: 600;

@@ -61,7 +61,7 @@
 }
 
 #live details summary::-webkit-details-marker {
-  display:none;
+  display: none;
 }
 
 #live details[open] {

@@ -19,13 +19,11 @@ main,
   padding: 0;
 }
 
-#cover,
-#description {
+#cover {
   font-family: 'Great Vibes', cursive;
 }
 
-#compilation,
-footer {
+#compilation {
   font-family: "Arial Narrow", Arial, sans-serif;
 }
 
@@ -100,13 +98,6 @@ footer {
   padding: 2.5rem 2.5rem 0;
   margin: auto;
   max-width: 1000px;
-}
-
-#description {
-  margin-top: 2.5rem;
-  line-height: 100%;
-  transform: scale(1, 2.5);
-  transform-origin: center;
 }
 
 @media screen and (max-width: 750px) {

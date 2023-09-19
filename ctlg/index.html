@@ -9,7 +9,6 @@
   <script src="../menu.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      indexBody()
       fetchHTML('compilation.html', '#compilation');
       fetchHTML('/1f/contents.html', '#one');
     });
@@ -37,19 +36,15 @@
 </head>
 
 <body>
-  <header id="header" hidden></header>
+  <header id="header"></header>
   <main>
     <h1 id="cover">
-      <span id="title"></span>
+      <span id="title">VG CTLG</span>
     </h1>
-    <article id="compilation" hidden></article>
-    <article id="one" hidden></article>
+    <article id="compilation"></article>
+    <article id="one"></article>
   </main>
-  <footer hidden>
-    <p id="description"></p>
-    <u>Last Modified</u>
-    <time id="lastModified"></time>
-  </footer>
+  <footer></footer>
 </body>
 
 </html>

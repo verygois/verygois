@@ -60,7 +60,7 @@ close.addEventListener('click', function() {
     enter.innerHTML = `
     <h1>#17SEP17SUN</h1>
     <h2><a href="https://vg.pe.hu/ctlg/04/17SEP17SUN/">Enter</a></h2>
-    <p>ID/Pass is included <a href="https://vg.pe.hu/ctlg/04/">Very Gois #04</a></p>
+    <p>ID/Pass is included <a href="../../ctlg/04/">Very Gois #04</a></p>
     `
     this.innerText = "?"
   }

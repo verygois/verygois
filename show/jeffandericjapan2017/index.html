@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
+
+  <!--og:meta-->
+  <meta content="website" property="og:type">
   <title>jeff witscher / eric frye japan tour 2017</title>
-  <meta name="description" content="sep 30 tokyo | oct 3 nagoya | oct 4 kyoto | oct 6 osaka | oct 8 tokyo">
+  <meta content="jeff witscher / eric frye japan tour 2017" property="og:title">
+  <meta content="sep 30 tokyo | oct 3 nagoya | oct 4 kyoto | oct 6 osaka | oct 8 tokyo" name="description">
+  <meta content="sep 30 tokyo | oct 3 nagoya | oct 4 kyoto | oct 6 osaka | oct 8 tokyo" name="og:description">
+
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://vg.pe.hu/show/jeffandericjapan2017/" property="og:url">
+  <meta content="https://vg.pe.hu/show/jeffandericjapan2017/cover.jpeg" property="og:image">
+  <meta content="https://vg.pe.hu/show/jeffandericjapan2017/cover.jpeg" name="twitter:image:src">
+
   <link rel="icon" href="icon.jpeg">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <nav>
     <p>
       <button type="button" onclick="jeff()">ジェフ・ウィッチャー</button>
       <button type="button" onclick="eric()">エリック・フライ</button>
     </p>
-    <p><button id="menu" type="button" onclick="about()">日本ツアー 2017</button></p>
+    <p>
+      <button id="menu" type="button" onclick="about()">日本ツアー 2017</button>
+    </p>
   </nav>
   <article id="schedule">
     <section>
@@ -30,31 +46,31 @@
         <li date-info="東京" onclick="www()">
           <time datetime="2017-09-30T24:00">2017年9月30日(土)</time>
           <h2>
-            genseiichi, ​​phonehead, ​​SlyAngle
+            genseiichi, phonehead, SlyAngle
           </h2>
         </li>
         <li date-info="名古屋" onclick="rita()">
           <time datetime="2017-10-03T19:00">2017年10月3日(火)</time>
           <h2>
-            Z.B.​​Aids,​ ​Saada ​​Abe,​ f​ri珍,​ ​woopheadclrms
+            Z.B.Aids, Saada Abe, fri珍, woopheadclrms
           </h2>
         </li>
         <li date-info="京都" onclick="soto()">
           <time datetime="2017-10-04T19:00">2017年10月4日(水)</time>
           <h2>
-            Takamitsu​​ Ohta, ​​Muku​​ Kobayashi, ​​Shoji​​ Funakawa, ​​Soshi ​​Matsunobe
+            Takamitsu Ohta, Muku Kobayashi, Shoji Funakawa, Soshi Matsunobe
           </h2>
         </li>
         <li date-info="大阪" onclick="osaka()">
           <time datetime="2017-10-06T19:00">2017年10月6日(金)</time>
           <h2>
-            Matthew​​ Sullivan, ​​Z.B.​​Aids, ​​Taku ​​Hannoda
+            Matthew Sullivan, Z.B.Aids, Taku Hannoda
           </h2>
         </li>
         <li date-info="東京" onclick="pool()">
           <time datetime="2017-10-08T17:00">2017年10月8日(日)</time>
           <h2>
-            Matthew ​​Sullivan, Nozomu ​​Matsumoto​ ​+ ​​H.​​TAKAHASHI, ​​Takamitsu ​​Ohta, ​​010001111000,​ ​Yusaku ​​Arai, Satoshi Kanda
+            Matthew Sullivan, Nozomu Matsumoto + H.TAKAHASHI, Takamitsu Ohta, 010001111000, Yusaku Arai, Satoshi Kanda
           </h2>
         </li>
       </ol>
@@ -63,11 +79,11 @@
   <article hidden>
     <section id="moreinfo">
       <p>
-        <i id="date">2017年 9月30日 - 10月8日</i><br/>
+        <i id="date">2017年 9月30日 - 10月8日</i><br />
         <u id="open"></u>
       </p>
       <p id="venue">Jeff Witscher / Eric Frye Japan Tour 2017</p>
-      <h3 id="name">ジェフ・ウィッチャー 🇺🇸<br/>エリック・フライ 🇺🇸</h3>
+      <h3 id="name">ジェフ・ウィッチャー 🇺🇸<br />エリック・フライ 🇺🇸</h3>
       <h3 id="act">日本ツアー 2017</h3>
       <p id="door">東京・名古屋・京都・大阪・東京</p>
     </section>
@@ -77,35 +93,37 @@
       <li onclick="window.location.assign('https://www-shibuya.jp/schedule/008376.php')">
         Tokyo
         <u>WWWβ</u>
-        <time>Open​/​​​Start​ ​​​24:00</time>
+        <time>Open/Start 24:00</time>
         <span>ADV ¥2,000 / DOOR ¥2,500 / U25 ¥1,500</span>
       </li>
       <li onclick="window.location.assign('https://spazio-rita.com/')">
         Nagoya
         <u>spazio rita</u>
-        <time>Open​/​​​Start​ ​​​19:00</time>
-        <span>ADV ¥2,500 / DOOR ¥3,000 (​+​​1​​drink ​​order)</span>
+        <time>Open/Start 19:00</time>
+        <span>ADV ¥2,500 / DOOR ¥3,000 (+1drink order)</span>
       </li>
       <li onclick="window.location.assign('https://vg.pe.hu/show/4OCT17WED/')">
         Kyoto
         <u>外 soto</u>
-        <time>Open​/​​​Start​ ​​​19:00</time>
+        <time>Open/Start 19:00</time>
         <span>ADV ¥2,500 / DOOR ¥3,000</span>
       </li>
-      <li onclick="window.location.assign('https://socorefactory.com/schedule/2017/10/06/jeff-witscher-eric-frye-japan-tour-2017/')">
+      <li
+        onclick="window.location.assign('https://socorefactory.com/schedule/2017/10/06/jeff-witscher-eric-frye-japan-tour-2017/')">
         Osaka
-        <u>socore f​actory</u>
-        <time>Open​/​​​Start​ ​​​19:00</time>
-        <span>ADV ¥3,000 / DOOR ¥3,500 (​+​​1​​drink ​​order)</span>
+        <u>socore factory</u>
+        <time>Open/Start 19:00</time>
+        <span>ADV ¥3,000 / DOOR ¥3,500 (+1drink order)</span>
       </li>
       <li onclick="window.location.assign('https://vg.pe.hu/show/cools/')">
         Tokyo
         <u>pool</u>
-        <time>Open​/​​​Start​ ​​​17:00</time>
-        <span>ADV ¥3,000 / DOOR ¥3,500 (Two days ticket with 10.9 / ​¥5,000)</span>
+        <time>Open/Start 17:00</time>
+        <span>ADV ¥3,000 / DOOR ¥3,500 (Two days ticket with 10.9 / ¥5,000)</span>
       </li>
     </ol>
   </aside>
   <script src="script.js"></script>
 </body>
+
 </html>

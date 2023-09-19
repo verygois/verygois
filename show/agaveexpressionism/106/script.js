@@ -11,7 +11,7 @@ function onModal() {
   }
 }
 
-openModal.addEventListener('click', function() {
+openModal.addEventListener('click', function () {
   onModal()
 });
 

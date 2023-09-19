@@ -121,6 +121,11 @@ body.hidden {
     font-size: 5vw;
   }
 
+  #header #button {
+    padding: 0.5rem;
+    margin: 0.25rem 0.5rem;
+  }
+
   #header menu {
     background-color: #fff;
     flex-flow: column;

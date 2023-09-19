@@ -2,7 +2,7 @@
 
 function changeHidden() {
   const articleAll = document.querySelectorAll('article'),
-  menu = document.querySelector('#menu');
+    menu = document.querySelector('#menu');
   articleAll.forEach(article => {
     if (article.hidden == false) {
       article.hidden = true
@@ -15,11 +15,11 @@ function changeHidden() {
 }
 
 const date = document.querySelector('#date'),
-name = document.querySelector('#name'),
-act = document.querySelector('#act'),
-venue = document.querySelector('#venue'),
-open = document.querySelector('#open'),
-door = document.querySelector('#door');
+  name = document.querySelector('#name'),
+  act = document.querySelector('#act'),
+  venue = document.querySelector('#venue'),
+  open = document.querySelector('#open'),
+  door = document.querySelector('#door');
 
 function about() {
   date.textContent = "2017年 9月30日 - 10月8日"

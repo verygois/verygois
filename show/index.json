@@ -1,9 +1,6 @@
 {
   "title" : "Show",
-  "author" : "Very Gois",
-  "description" : "https://vg.pe.hu/show/",
-  "card" : "summary_large_image",
-  "src" : "https://vg.pe.hu/1f/book/box.jpeg",
+
   "org" : [
     {
       "date" : "2022.01.15 - 01.30",
@@ -260,14 +257,14 @@
     {
       "date" : "2017.09.30 - 10.01",
       "name" : "ART MARCHÉ / NUIT FRANCAISE",
-      "about" : "BOOK FAIR / MUSIC SHOW",
+      "about" : "Book Fair / Music Show",
       "url" : "/show/artmarche/",
       "class" : "etc"
     },
     {
       "date" : "2017.09.23 - 10.9",
       "name" : "LAGON JAPON",
-      "about" : "GOUFFRE GROUP SHOW / BETTINA HENNI ALEXIS BEAUCLAIR EXHIBITION / L’INSTITUT SÉRIGRAPHIQUE SAMMY STEIN JEAN-PHILIPPE BRETIN EXHIBITION",
+      "about" : "GOUFFRE Group Show / Bettina Henni Alexis Beauclair Exhibition / L'Institut Sérigraphique Sammy Stein Jean-Philippe Bretin Exhibition",
       "url" : "http://revuelagon.com/japon",
       "class" : "art"
     },
@@ -287,7 +284,7 @@
     },
     {
       "date" : "2017.08.12 - 08.20",
-      "name" : "怒羅権｜Dragon",
+      "name" : "怒羅権 | Dragon",
       "about" : "by Anne Öhrling Dersen ,Yoshihiko Idei, Ohiana, Jon Vaughn, Akina Tokiyoshi, Shingo Minamida",
       "url" : "/show/dragon/",
       "class" : "art"
@@ -365,7 +362,7 @@
     {
       "date" : "2015.04.11 - 04.20",
       "name" : "PREMIUM SHOWCASE 2015 春 @ Prinz",
-      "about" : "［Exhibition］4月11日(土) ~ 4月20日(月)  | ［Market day］4月12日(日) & 4月19日(日)",
+      "about" : "[Exhibition] 4月11日(土) ~ 4月20日(月) | [Market day] 4月12日(日) & 4月19日(日)",
       "url" : "/show/premium-showcase/",
       "class" : "art etc"
     },

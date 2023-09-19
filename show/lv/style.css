@@ -1,12 +1,18 @@
 html {
-  font-family: "Great Vibes", "IBM Plex Sans Condensed", monospace;
+  height: -webkit-fill-available;
+}
+
+article {
   font-size: 3.21vw;
 }
 
+@font-face {
+  font-family: "MS Mincho", serif;
+  src: url("https://vg.pe.hu/fonts/family/MSMincho.ttf");
+}
+
 body {
-  background: 50% 50% / cover;
-  background-attachment: fixed;
-  background-image: url("cover.jpeg");
+  font-family: "Great Vibes", "MS Mincho", "SimSong", serif;
 }
 
 body,
@@ -33,8 +39,27 @@ h3 {
   font-weight: 500;
 }
 
+article,
+aside {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 article {
-  height: 250vh;
+  background-image: url("logo.png");
+  background-size: contain;
+  height: 300vh;
+  max-height: 300vw;
+}
+
+aside {
+  background-image: url("cover.jpeg");
+  background-size: cover;
+  height: 100vh;
+}
+
+aside span {
+  background: #fff;
 }
 
 #title {
@@ -96,4 +121,5 @@ a {
 aside {
   position: relative;
   z-index: 100;
+  max-height: -webkit-fill-available;
 }

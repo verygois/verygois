@@ -1,103 +1,58 @@
-body {
-  font-size: 16px;
-  padding: 0;
-  margin: 0;
+#header,
+#header menu,
+#header #button {
+    top: 0;
 }
 
-* {
-  box-sizing: border-box;
+#art:checked~a:not(.art),
+#music:checked~a:not(.music),
+#hash:checked~a:not(.hash),
+#su:checked~a:not(.su),
+#one:checked~a:not(.one),
+#two:checked~a:not(.two),
+#etc:checked~a:not(.etc) {
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
 }
 
-#org {
-  font-family: "Arial Narrow", "Arial", sans-serif;
-}
-
-#org .btn {
-  transition: 1.5s all;
-}
-
-#org .btn:hover {
-  cursor: pointer;
-  transition: .5s all;
-}
-
-#org .btn {
-  color: #000;
-  background-color: #fff;
-  text-shadow: 0.1rem 0.1rem #fff;
-}
-
-#org .btn:hover,
-#org input[type="radio"]:checked+.btn {
-  color: #fff;
-  background-color: #eee;
-  text-shadow: 0.1rem 0.1rem #000;
-}
-
-hr {
-  clear: both;
-  border: none;
-}
-
-#org input[type="radio"] {
-  display: none;
-}
-
-#org {
-  padding: 0.75rem;
-  margin: 3rem auto 0;
-  width: 100%;
-}
-
-#org .btn {
-  display: inline-block;
-  border-radius: 0.5rem;
-  font-size: 100%;
-  padding: 0.25rem;
-  margin: 0.125rem 0.25rem 0.125rem 0;
-  text-transform: capitalize;
-}
-
-#org a {
-  border-bottom: solid 1px;
-  color: blue;
-  text-decoration: none;
-  transition: 1s;
-  line-height: 150%;
-  padding: 0.5rem 0 0.125rem;
-  margin: 0.5rem 0.5rem 1rem 0;
-}
-
-#org a u {
-  background: blue;
-  color: #fff;
-  display: inline-block;
-  padding: 0 0.125rem;
-  margin: 0 0.5rem 0 0;
-  text-decoration: none;
-}
-
-#org a b {
-  padding: 0 0.5rem 0 0;
-}
-
-#org a b,
-#org a span {
-  line-height: 175%;
-}
-
-@media (orientation: portrait) {
-  #org {
-    margin: 10vw auto 0;
-  }
+@media screen and (min-width: 500px) {
+    label[for="all"] {
+        float: right;
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 500px) {
-  #org {
-    margin: 10vw auto 0;
-  }
-  
-  html {
-    font-size: 4vw;
-  }
+
+    #art:checked~a:not(.art),
+    #music:checked~a:not(.music),
+    #hash:checked~a:not(.hash),
+    #su:checked~a:not(.su),
+    #one:checked~a:not(.one),
+    #two:checked~a:not(.two),
+    #etc:checked~a:not(.etc) {
+        font-size: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    #art:checked~a:not(.art) u,
+    #music:checked~a:not(.music) u,
+    #hash:checked~a:not(.hash) u,
+    #su:checked~a:not(.su) u,
+    #one:checked~a:not(.one) u,
+    #two:checked~a:not(.two) u,
+    #etc:checked~a:not(.etc) u,
+    #art:checked~a:not(.art) b,
+    #music:checked~a:not(.music) b,
+    #hash:checked~a:not(.hash) b,
+    #su:checked~a:not(.su) b,
+    #one:checked~a:not(.one) b,
+    #two:checked~a:not(.two) b,
+    #etc:checked~a:not(.etc) b {
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
 }

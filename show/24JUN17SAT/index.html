@@ -1,52 +1,68 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
+
+  <!--og:meta-->
+  <meta content="website" property="og:type">
   <title>#24JUN17SAT</title>
-  <meta name="description" content="by biki, 神田聡, 直嶋岳史, 0100011110001, Cy Fan, Rockrototante, 高見澤優海, 趙里奈, Offbeat rats">
-  <link rel="icon" href="https://vg.pe.hu/cv/icon/icon.png" />
+  <meta content="#24JUN17SAT" property="og:title">
+  <meta content="by biki, 神田聡, 直嶋岳史, 0100011110001, Cy Fan, Rockrototante, 高見澤優海, 趙里奈, Offbeat rats" name="description">
+  <meta content="by biki, 神田聡, 直嶋岳史, 0100011110001, Cy Fan, Rockrototante, 高見澤優海, 趙里奈, Offbeat rats"
+    name="og:description">
+
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://vg.pe.hu/show/24JUN17SAT/" property="og:url">
+  <meta content="https://vg.pe.hu/show/24JUN17SAT/360/4_12.jpg" property="og:image">
+  <meta content="https://vg.pe.hu/show/24JUN17SAT/360/4_12.jpg" name="twitter:image:src">
+
+  <link rel="icon" href="https://vg.pe.hu/cv/icon/favicon.png" />
   <link rel="stylesheet" href="../../ctlg/04/vr.css">
   <script src="../../ctlg/04/aframe.min.js"></script>
   <style>
-  #enter {
-    max-height: 75%;
-  }
-
-  @media screen and (max-width: 550px) {
-    html {
-      font-size: 3.75vw;
+    #enter {
+      max-height: 75%;
     }
-  }
+
+    @media screen and (max-width: 550px) {
+      html {
+        font-size: 3.75vw;
+      }
+    }
   </style>
 </head>
+
 <body>
   <a-scene id="aframe"></a-scene>
   <script>
-  let aframeSrc = document.querySelector('#aframe')
-  var now = new Date();
-  var hour = now.getHours();
-  if(hour >= 5 && hour <= 12) {
-    aframeSrc.innerHTML = `<a-sky src="360/4_12.jpg"></a-sky>`
-  } else if(hour >= 13 && hour <= 15) {
-    aframeSrc.innerHTML = `<a-sky src="360/13_15.jpg"></a-sky>`
-  } else if(hour >= 16 && hour <= 18) {
-    aframeSrc.innerHTML = `<a-sky src="360/16_18.jpg"></a-sky>`
-  } else if(hour >= 19 && hour <= 21) {
-    aframeSrc.innerHTML = `<a-sky src="360/19_21.jpg"></a-sky>`
-  } else {
-    aframeSrc.innerHTML = `<a-sky src="360/22_04.jpg"></a-sky>`
-  }
+    let aframeSrc = document.querySelector('#aframe')
+    var now = new Date();
+    var hour = now.getHours();
+    if (hour >= 5 && hour <= 12) {
+      aframeSrc.innerHTML = `<a-sky src="360/4_12.jpg"></a-sky>`
+    } else if (hour >= 13 && hour <= 15) {
+      aframeSrc.innerHTML = `<a-sky src="360/13_15.jpg"></a-sky>`
+    } else if (hour >= 16 && hour <= 18) {
+      aframeSrc.innerHTML = `<a-sky src="360/16_18.jpg"></a-sky>`
+    } else if (hour >= 19 && hour <= 21) {
+      aframeSrc.innerHTML = `<a-sky src="360/19_21.jpg"></a-sky>`
+    } else {
+      aframeSrc.innerHTML = `<a-sky src="360/22_04.jpg"></a-sky>`
+    }
   </script>
   <article>
     <section id="enter">
       <h1>#24JUN17SAT</h1>
       <h2><a href="https://vg.pe.hu/ctlg/04/24JUN17SAT/">Enter</a></h2>
-      <p>ID/Pass is included <a href="http://vg.pe.hu/compilation/04/">Very Gois #04</a></p>
+      <p>ID/Pass is included <a href="../../ctlg/04/">Very Gois #04</a></p>
     </section>
     <button type="button" id="close">?</button>
   </article>
   <script src="script.js"></script>
 </body>
+
 </html>

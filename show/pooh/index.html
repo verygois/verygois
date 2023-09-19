@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +12,12 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script type="text/javascript" src="jquery.arctext.js"></script>
   <style>
-  #cover {
-    background-image: url("cover.jpg");
-  }
+    #cover {
+      background-image: url("cover.jpg");
+    }
   </style>
 </head>
+
 <body>
   <article>
     <header id="title">
@@ -34,38 +36,39 @@
     <hr>
   </article>
   <script type="text/javascript">
-  $('#example1').arctext({radius: 400});
+    $('#example1').arctext({ radius: 400 });
 
-  let pooh = {
-    'img/001.jpg':'サンアンドスター',
-    'img/002.jpg':'プーとクロ',
-    'img/003.jpeg':'プーとプー',
-    'img/004.jpeg':'インスタグラム',
-    'img/005.jpeg':'LINEスタンプ'
-  };
+    let pooh = {
+      'img/001.jpg': 'サンアンドスター',
+      'img/002.jpg': 'プーとクロ',
+      'img/003.jpeg': 'プーとプー',
+      'img/004.jpeg': 'インスタグラム',
+      'img/005.jpeg': 'LINEスタンプ'
+    };
 
-  const cover = document.querySelector("#cover"),
-  article = document.querySelector("article");
-  cover.addEventListener("click", function() {
-    cover.style.display = "none"
-    article.style.backgroundImage = "url('cover.jpg')";
-    window.setInterval(function () {
-      nextBG(pooh, 'article')
-    }, 2000);
-  }, false);
+    const cover = document.querySelector("#cover"),
+      article = document.querySelector("article");
+    cover.addEventListener("click", function () {
+      cover.style.display = "none"
+      article.style.backgroundImage = "url('cover.jpg')";
+      window.setInterval(function () {
+        nextBG(pooh, 'article')
+      }, 2000);
+    }, false);
 
 
-  num = 0;
-  function nextBG(imgArr, query = '') {
-    if(num >= Object.entries(imgArr).length - 1) {
-      num = 0;
-    } else {
-      num++;
+    num = 0;
+    function nextBG(imgArr, query = '') {
+      if (num >= Object.entries(imgArr).length - 1) {
+        num = 0;
+      } else {
+        num++;
+      }
+      let thisIMG = Object.entries(imgArr)[num];
+      document.querySelector(query).style.backgroundImage = `url("${thisIMG[0]}")`
     }
-    let thisIMG = Object.entries(imgArr)[num];
-    document.querySelector(query).style.backgroundImage = `url("${thisIMG[0]}")`
-  }
   </script>
   <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>

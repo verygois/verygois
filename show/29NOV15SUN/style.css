@@ -94,7 +94,8 @@ nav p {
 }
 
 #map {
-  background: 50% 50% / cover #fff;;
+  background: 50% 50% / cover #fff;
+  ;
   background-image: url("cover.png");
   border-bottom: none;
   display: flex;

@@ -1,12 +1,12 @@
 'use strict'
 
 let aside = document.querySelector('#map'),
-one = document.querySelector('#one'),
-ohta = document.querySelector('#ohta'),
-neko = document.querySelector('#neko'),
-miyuki = document.querySelector('#miyuki'),
-ezaki = document.querySelector('#ezaki'),
-mizuuchi = document.querySelector('#mizuuchi');
+  one = document.querySelector('#one'),
+  ohta = document.querySelector('#ohta'),
+  neko = document.querySelector('#neko'),
+  miyuki = document.querySelector('#miyuki'),
+  ezaki = document.querySelector('#ezaki'),
+  mizuuchi = document.querySelector('#mizuuchi');
 
 function map() {
   aside.innerHTML = `
@@ -21,42 +21,42 @@ function sunset() {
   aside.style.backgroundImage = 'url("cover.png")'
 }
 
-one.addEventListener('click', function() {
+one.addEventListener('click', function () {
   aside.innerHTML = `
   <h3>010001111000<br/>演奏</h3>
   `
   aside.style.backgroundImage = 'url("")'
 });
 
-ohta.addEventListener('click', function() {
+ohta.addEventListener('click', function () {
   aside.innerHTML = `
   <h3>Takamitsu Ohta<br/>サウンドインスタレーション</h3>
   `
   aside.style.backgroundImage = 'url("")'
 });
 
-neko.addEventListener('click', function() {
+neko.addEventListener('click', function () {
   aside.innerHTML = `
   <h3>ねこっぱ<br/>詩の朗読</h3>
   `
   aside.style.backgroundImage = 'url("")'
 });
 
-miyuki.addEventListener('click', function() {
+miyuki.addEventListener('click', function () {
   aside.innerHTML = `
   <h3>みゆき<br/>選曲する</h3>
   `
   aside.style.backgroundImage = 'url("")'
 });
 
-ezaki.addEventListener('click', function() {
+ezaki.addEventListener('click', function () {
   aside.innerHTML = `
   <h3>江崎將史<br/>音を伴う行為、行為、作曲</h3>
   `
   aside.style.backgroundImage = 'url("")'
 });
 
-mizuuchi.addEventListener('click', function() {
+mizuuchi.addEventListener('click', function () {
   aside.innerHTML = `
   <h3>水内義人<br/>遠隔参加による催眠術</h3>
   `
