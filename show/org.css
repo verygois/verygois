@@ -74,13 +74,13 @@ hr {
 
 #org a .date,
 #org a .title {
-  display: inline-block;
   margin: 0 0.5rem 0 0;
 }
 
 #org a .date {
   background: blue;
   color: #fff;
+  display: inline-block;
   padding: 0 0.125rem;
   text-decoration: none;
 }

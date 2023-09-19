@@ -4,55 +4,9 @@
     top: 0;
 }
 
-#art:checked~a:not(.art),
-#music:checked~a:not(.music),
-#hash:checked~a:not(.hash),
-#su:checked~a:not(.su),
-#one:checked~a:not(.one),
-#two:checked~a:not(.two),
-#etc:checked~a:not(.etc) {
-    opacity: 0;
-    pointer-events: none;
-    user-select: none;
-}
-
 @media screen and (min-width: 500px) {
     label[for="all"] {
         float: right;
         margin: 0.125rem 0;
-    }
-}
-
-@media screen and (max-width: 500px) {
-
-    #art:checked~a:not(.art),
-    #music:checked~a:not(.music),
-    #hash:checked~a:not(.hash),
-    #su:checked~a:not(.su),
-    #one:checked~a:not(.one),
-    #two:checked~a:not(.two),
-    #etc:checked~a:not(.etc) {
-        font-size: 0;
-        padding: 0;
-        margin: 0;
-    }
-
-    #art:checked~a:not(.art) u,
-    #music:checked~a:not(.music) u,
-    #hash:checked~a:not(.hash) u,
-    #su:checked~a:not(.su) u,
-    #one:checked~a:not(.one) u,
-    #two:checked~a:not(.two) u,
-    #etc:checked~a:not(.etc) u,
-    #art:checked~a:not(.art) b,
-    #music:checked~a:not(.music) b,
-    #hash:checked~a:not(.hash) b,
-    #su:checked~a:not(.su) b,
-    #one:checked~a:not(.one) b,
-    #two:checked~a:not(.two) b,
-    #etc:checked~a:not(.etc) b {
-        display: none;
-        padding: 0;
-        margin: 0;
     }
 }
