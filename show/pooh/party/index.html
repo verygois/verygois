@@ -5,8 +5,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
+
+  <!--og:meta-->
+  <meta content="website" property="og:type">
   <title>プーのパーティ会場へようこそ | ディナミ シャイスケ 写真展</title>
-  <meta name="description" content="会場:ナイスショップスー | 会期:2014年6月21日(土) - 7月6日(日) | 平日15時から20時 土日12時から21時">
+  <meta content="プーのパーティ会場へようこそ | ディナミ シャイスケ 写真展" property="og:title">
+  <meta content="会場:ナイスショップスー | 会期:2014年6月21日(土) - 7月6日(日) | 平日:15時から20時 土日:12時から21時" name="description">
+  <meta content="会場:ナイスショップスー | 会期:2014年6月21日(土) - 7月6日(日) | 平日:15時から20時 土日:12時から21時" name="og:description">
+
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://vg.pe.hu/show/pooh/party/" property="og:url">
+  <meta content="https://vg.pe.hu/show/pooh/party/cover.png" property="og:image">
+  <meta content="https://vg.pe.hu/show/pooh/party/cover.png" name="twitter:image:src">
+
   <link rel="icon" href="000.jpg">
   <link rel="stylesheet" href="../style.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -52,28 +64,6 @@
       '008.jpg': '羽束師プー',
       '009.jpg': '焼肉298'
     };
-
-    const cover = document.querySelector("#cover"),
-      article = document.querySelector("article");
-    cover.addEventListener("click", function () {
-      cover.style.display = "none"
-      article.style.backgroundImage = "url('cover.png')";
-      window.setInterval(function () {
-        nextBG(pooh, 'article')
-      }, 2000);
-    }, false);
-
-
-    num = 0;
-    function nextBG(imgArr, query = '') {
-      if (num >= Object.entries(imgArr).length - 1) {
-        num = 0;
-      } else {
-        num++;
-      }
-      let thisIMG = Object.entries(imgArr)[num];
-      document.querySelector(query).style.backgroundImage = `url("${thisIMG[0]}")`
-    }
   </script>
   <script type="text/javascript" src="../script.js"></script>
 </body>

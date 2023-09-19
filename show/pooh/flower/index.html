@@ -5,8 +5,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
+
+  <!--og:meta-->
+  <meta content="website" property="og:type">
   <title>夢想花 ～プーと駆け抜けた19年間～ | ディナミ シャイスケ 写真展</title>
-  <meta name="description" content="会場:ナイスショップスー | 前期:2015年3月15日(日) - 4月9日(金) | 後期:2015年4月20日(月) - 4月25日(土)">
+  <meta content="夢想花 ～プーと駆け抜けた19年間～ | ディナミ シャイスケ 写真展" property="og:title">
+  <meta content="会場:ナイスショップスー | 前期:2015年3月15日(日) - 4月9日(金) | 後期:2015年4月20日(月) - 4月25日(土)" name="description">
+  <meta content="会場:ナイスショップスー | 前期:2015年3月15日(日) - 4月9日(金) | 後期:2015年4月20日(月) - 4月25日(土)" name="og:description">
+
+  <!--for Twitter-->
+  <meta content="summary" name="twitter:card">
+  <meta content="https://vg.pe.hu/show/pooh/flower/" property="og:url">
+  <meta content="https://vg.pe.hu/show/pooh/flower/001.jpg" property="og:image">
+  <meta content="https://vg.pe.hu/show/pooh/flower/001.jpg" name="twitter:image:src">
+
+  <title></title>
+  <meta name="description" content="">
   <link rel="icon" href="001.jpg">
   <link rel="stylesheet" href="../style.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -45,6 +59,7 @@
     $('#example1').arctext({ radius: 400 });
 
     let pooh = {
+      '001.jpg': 'ディナミ シャイスケ',
       '002.jpg': 'プーとDVD VIDEO',
       '003.jpg': '空飛ぶプー',
       '004.jpg': 'プー会議１',
@@ -52,30 +67,9 @@
       '006.jpg': 'え！',
       '007.jpg': 'うそー！',
       '008.jpg': '今日で終わりだって？',
-      '009.jpg': 'まだ展示したりねェ！そうだよな？'
+      '009.jpg': 'まだ展示したりねェ！そうだよな？',
+      '010.jpg': '夢想花'
     };
-
-    const cover = document.querySelector("#cover"),
-      article = document.querySelector("article");
-    cover.addEventListener("click", function () {
-      cover.style.display = "none"
-      article.style.backgroundImage = "url('010.jpg')";
-      window.setInterval(function () {
-        nextBG(pooh, 'article')
-      }, 2000);
-    }, false);
-
-
-    num = 0;
-    function nextBG(imgArr, query = '') {
-      if (num >= Object.entries(imgArr).length - 1) {
-        num = 0;
-      } else {
-        num++;
-      }
-      let thisIMG = Object.entries(imgArr)[num];
-      document.querySelector(query).style.backgroundImage = `url("${thisIMG[0]}")`
-    }
   </script>
   <script type="text/javascript" src="../script.js"></script>
 </body>

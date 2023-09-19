@@ -5,8 +5,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
+
+  <!--og:meta-->
+  <meta content="website" property="og:type">
   <title>プーの見る夢 〜太陽と星〜 | ディナミ シャイスケ 写真展</title>
-  <meta name="description" content="会場:高円寺 ASOKO | 会期:2015年2月8日(日) - 2月22日(日) | オープン日は土日祝のみ">
+  <meta content="プーの見る夢 〜太陽と星〜 | ディナミ シャイスケ 写真展" property="og:title">
+  <meta content="会場:高円寺 ASOKO | 会期:2015年2月8日(日) - 2月22日(日) | オープン日は土日祝のみ" name="description">
+  <meta content="会場:高円寺 ASOKO | 会期:2015年2月8日(日) - 2月22日(日) | オープン日は土日祝のみ" name="og:description">
+
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://vg.pe.hu/show/pooh/dream/" property="og:url">
+  <meta content="https://vg.pe.hu/show/pooh/dream/cover.png" property="og:image">
+  <meta content="https://vg.pe.hu/show/pooh/dream/cover.png" name="twitter:image:src">
+
   <link rel="icon" href="000.png">
   <link rel="stylesheet" href="../style.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -42,6 +54,7 @@
     $('#example1').arctext({ radius: 400 });
 
     let pooh = {
+      '000.png': 'ASOKO',
       '001.jpeg': '空飛ぶプー',
       '002.jpeg': '空飛ぶプーのケツ',
       '003.jpeg': 'プーと新プーとD',
@@ -50,28 +63,6 @@
       '006.jpeg': 'タペストリーと空飛ぶプー',
       '007.jpg': '池野さんと池野さんのプーとプー'
     };
-
-    const cover = document.querySelector("#cover"),
-      article = document.querySelector("article");
-    cover.addEventListener("click", function () {
-      cover.style.display = "none"
-      article.style.backgroundImage = "url('000.png')";
-      window.setInterval(function () {
-        nextBG(pooh, 'article')
-      }, 2000);
-    }, false);
-
-
-    num = 0;
-    function nextBG(imgArr, query = '') {
-      if (num >= Object.entries(imgArr).length - 1) {
-        num = 0;
-      } else {
-        num++;
-      }
-      let thisIMG = Object.entries(imgArr)[num];
-      document.querySelector(query).style.backgroundImage = `url("${thisIMG[0]}")`
-    }
   </script>
   <script type="text/javascript" src="../script.js"></script>
 </body>

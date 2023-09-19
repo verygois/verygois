@@ -12,6 +12,10 @@ body {
   font-family: "Arial Narrow", "Arial", sans-serif;
 }
 
+#org a .info {
+  font-size: 95%;
+}
+
 #org .btn {
   transition: 1.5s all;
 }
@@ -53,7 +57,7 @@ hr {
   display: inline-block;
   border-radius: 0.5rem;
   font-size: 100%;
-  padding: 0.25rem;
+  padding: 0.25rem 0.4rem 0.25rem 0.25rem;
   margin: 0.125rem 0.25rem 0.125rem 0;
   text-transform: capitalize;
 }
@@ -68,17 +72,17 @@ hr {
   margin: 0.5rem 0.5rem 1rem 0;
 }
 
+#org a .date,
+#org a .title {
+  display: inline-block;
+  margin: 0 0.5rem 0 0;
+}
+
 #org a .date {
   background: blue;
   color: #fff;
-  display: inline-block;
   padding: 0 0.125rem;
-  margin: 0 0.5rem 0 0;
   text-decoration: none;
-}
-
-#org a .title {
-  padding: 0 0.5rem 0 0;
 }
 
 #org a .title,

@@ -1,7 +1,29 @@
 'use strict'
 
-const book = document.querySelector("#book"),
-    show = document.querySelector("#show");
+let num = 0;
+
+const cover = document.querySelector("#cover");
+cover.addEventListener("click", function () {
+    cover.style.display = "none"
+    nextBG(pooh, 'article')
+    window.setInterval(function () {
+        nextBG(pooh, 'article')
+    }, 2000);
+}, false);
+
+function nextBG(imgArr, query = '') {
+    if (num >= Object.entries(imgArr).length - 1) {
+        num = 0;
+    } else {
+        num++;
+    }
+
+    let thisIMG = Object.entries(imgArr)[num];
+    document.querySelector(query).style.backgroundImage = `url("${thisIMG[0]}")`
+}
+
+const book = document.querySelector("#book");
+const show = document.querySelector("#show");
 
 show.innerHTML = `
 <strong>🎊写📷真📸展🎊</strong><br/>

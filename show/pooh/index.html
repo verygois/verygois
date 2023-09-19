@@ -5,8 +5,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
+
+  <!--og:meta-->
+  <meta content="website" property="og:type">
   <title>プーさん写真集 2008-2014 | ディナミ シャイスケ</title>
-  <meta name="description" content="2008年-2014年に、ディナミが撮影したプーの写真集 | 価格1000円 | サイズB5、フルカラー">
+  <meta content="プーさん写真集 2008-2014 | ディナミ シャイスケ" property="og:title">
+  <meta content="2008年-2014年に、ディナミが撮影したプーの写真集 | 価格1000円 | サイズB5、フルカラー" name="description">
+  <meta content="2008年-2014年に、ディナミが撮影したプーの写真集 | 価格1000円 | サイズB5、フルカラー" name="og:description">
+
+  <!--for Twitter-->
+  <meta content="summary" name="twitter:card">
+  <meta content="https://vg.pe.hu/show/pooh/" property="og:url">
+  <meta content="https://vg.pe.hu/show/pooh/cover.png" property="og:image">
+  <meta content="https://vg.pe.hu/show/pooh/cover.png" name="twitter:image:src">
+
   <link rel="icon" href="cover.jpg">
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -45,28 +57,6 @@
       'img/004.jpeg': 'インスタグラム',
       'img/005.jpeg': 'LINEスタンプ'
     };
-
-    const cover = document.querySelector("#cover"),
-      article = document.querySelector("article");
-    cover.addEventListener("click", function () {
-      cover.style.display = "none"
-      article.style.backgroundImage = "url('cover.jpg')";
-      window.setInterval(function () {
-        nextBG(pooh, 'article')
-      }, 2000);
-    }, false);
-
-
-    num = 0;
-    function nextBG(imgArr, query = '') {
-      if (num >= Object.entries(imgArr).length - 1) {
-        num = 0;
-      } else {
-        num++;
-      }
-      let thisIMG = Object.entries(imgArr)[num];
-      document.querySelector(query).style.backgroundImage = `url("${thisIMG[0]}")`
-    }
   </script>
   <script type="text/javascript" src="script.js"></script>
 </body>

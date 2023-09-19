@@ -27,7 +27,7 @@ function objORG(obj) {
     itemTitle.textContent = item.name;
     itemTitle.setAttribute("class", "title");
     itemSpan.textContent = item.about;
-    itemTitle.setAttribute("class", "info");
+    itemSpan.setAttribute("class", "info");
 
     org.appendChild(itemA);
     itemA.appendChild(itemDate);
