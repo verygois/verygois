@@ -9,8 +9,6 @@ let main = document.querySelector('main'),
   about = document.querySelector('header p');
 
 const dialogModal = document.querySelector('#modal');
-const openModal = document.querySelector('#openModal');
-
 function onModal() {
   if (typeof dialogModal.showModal === "function") {
     dialogModal.showModal();
