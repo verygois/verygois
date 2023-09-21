@@ -56,7 +56,8 @@ body {
 }
 
 @media (orientation: portrait) {
-  #contents a.hidden {
+  #contents a.hidden,
+  #contents a.hidden * {
     font-size: 0;
     padding: 0;
     margin: 0;
