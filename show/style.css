@@ -50,25 +50,25 @@ body {
     line-height: 175%;
 }
 
+#contents a.hidden u,
+#contents a.hidden b,
+#contents a.hidden span {
+    display: none;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+}
+
 @media (orientation: portrait) {
     #org {
         margin: 10vw auto 0;
     }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 550px) {
     label[for="all"] {
         float: right;
         margin: 0.125rem 0;
-    }
-
-    #contents a.hidden u,
-    #contents a.hidden b,
-    #contents a.hidden span {
-        display: none;
-        font-size: 0;
-        padding: 0;
-        margin: 0;
-        line-height: 0;
     }
 }
