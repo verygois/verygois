@@ -50,17 +50,13 @@ body {
 }
 
 #contents a.hidden {
+  border-bottom: none;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
   opacity: 0;
   pointer-events: none;
   user-select: none;
-}
-
-@media (orientation: portrait) {
-  #contents a.hidden {
-    font-size: 0;
-    padding: 0;
-    margin: 0;
-  }
 }
 
 @media screen and (max-width: 500px) {
