@@ -1,6 +1,7 @@
 Hello, I'm Kazuma Sasajima. Live in Osaka, Japan.
 
-- 🌱 This is the My History of Internet [CV](https://verygois.github.io/WHOIS/)
+I've got a domain [vg.pe.hu](https://verygois.github.io/WHOIS/) 13 DEC 2014.
+
 
 <!--
 **verygois/verygois** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
