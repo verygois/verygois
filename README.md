@@ -1,6 +1,6 @@
 Hello, I'm Kazuma Sasajima. Live in Osaka, Japan.
 
-- 💻 I've got a domain [vg.pe.hu](https://verygois.github.io/WHOIS/) 13 DEC 2014.
+- 💻 I've got a domain [vg.pe.hu](https://vg.pe.hu/cv/) 13 DEC 2014.
 
 
 <!--
