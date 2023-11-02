@@ -3,13 +3,12 @@
 const main = document.querySelector('#main'),
 video = document.querySelector('#video'),
 mp4 = document.querySelector('#mp4'),
-download = document.querySelector('#download'),
-directory = 'https://ia802705.us.archive.org/25/items/the-great-tokyo-summit/';
+download = document.querySelector('#download')
 
 function playThis() {
-  video.setAttribute('poster', `${directory}001.jpg`);
-  mp4.setAttribute('src', `${directory}000.mp4`);
-  download.setAttribute('href', `${directory}000.mp4`);
+  video.setAttribute('poster', '001.jpg');
+  mp4.setAttribute('src', '000.mp4');
+  download.setAttribute('href', '000.mp4');
   video.load();
 }
 
@@ -25,7 +24,7 @@ video.addEventListener('ended', () => {
 }, false);
 
 function bgImage(url = '') {
-  document.body.style.backgroundImage = `url('${directory}${url}')`;
+  document.body.style.backgroundImage = `url(${url})`;
 }
 
 const changeBGAll = document.querySelectorAll('footer div[data-img]');
