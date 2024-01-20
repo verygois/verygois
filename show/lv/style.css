@@ -85,12 +85,6 @@ section {
   bottom: 5%;
 }
 
-#text {
-  top: 25%;
-  left: 25%;
-  width: 50%;
-}
-
 a {
   color: #00a892;
   text-shadow: 0.25vw 0.25vw 0.25vw,
@@ -101,8 +95,7 @@ a {
   margin: 1vw;
 }
 
-#title,
-#text {
+#title {
   color: #FFF;
   text-shadow: 0.25vw 0.25vw 0.25vw #ddd,
   -0.25vw 0.25vw 0px #eee,
