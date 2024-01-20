@@ -16,7 +16,6 @@
     };
 
     document.addEventListener("DOMContentLoaded", () => {
-      fetchHTML('compilation.html', '#compilation');
       fetchHTML('https://vg.pe.hu/1f/contents.html', '#one');
     });
   </script>
@@ -48,7 +47,36 @@
     <h1 id="cover">
       <span>VG CTLG</span>
     </h1>
-    <article id="compilation"></article>
+    <article id="compilation">
+      <p><b>Compilation</b></p>
+      <a href="04/">
+        <b>#4</b>
+        <img src="icon/cdr.png">
+        + <img src="icon/cdr.png">
+        + <img src="icon/dvd.png">
+        ( <img src="icon/video.png">
+        + <img src="icon/mp3.png">
+        + <img src="icon/web.png"> )
+        + <img src="icon/book.png">
+      </a>
+      <a href="03/">
+        <b>#3</b>
+        <img src="icon/book.png">
+        + <img src="icon/dvd.png">
+        ( <img src="icon/mp3.png">
+        + <img src="icon/video.png">
+        + <img src="icon/pdf.png"> )
+      </a>
+      <a href="02/">
+        <b>#2</b>
+        <img src="icon/cdr.png">
+        + <img src="icon/pdf.png">
+      </a>
+      <a href="01/">
+        <b>#1</b>
+        <img src="icon/cdr.png">
+      </a>
+    </article>
     <article id="one"></article>
   </main>
   <footer></footer>
