@@ -13,7 +13,7 @@ document.addEventListener('readystatechange', event => {
     <li><a href="/">Very Gois</a></li>
     <li><a href="/ctlg/">CTLG</a></li>
     <li><a href="/show/">SHOW</a></li>
-    <li><a href="/up/">WWW</a></li>
+    <li><a href="/up/">+</a></li>
     `;
 
     header.appendChild(button);
