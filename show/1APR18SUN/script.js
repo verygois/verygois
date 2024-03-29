@@ -1,42 +1,41 @@
 'use strict'
 
-const directory = "https://ia902704.us.archive.org/4/items/1APR18SUN/1APR18SUN/"
-const thumbs = "https://archive.org/download/1APR18SUN/1APR18SUN.thumbs/1APR18SUN/"
+const directory = "https://arena-attachments.s3.amazonaws.com/"
 let coverArr = [
-  'cover'
+  '27257417/5a485fb049c48d97e97a332bfb47ac36.mp4'
 ];
 
 let weatherArr = [
-  'weather/001'
+  '27257958/79f45257a0fa9ffb56a88fc377a125b0.mp4'
 ];
 
 let gakuArr = [
-  'gaku/001',
-  'gaku/002',
-  'gaku/003',
-  'gaku/004',
-  'gaku/005',
-  'gaku/006',
-  'gaku/007',
-  'gaku/008'
+  '27257437/30a5eb3b8c7d6352a05fe4c7c1a47a26.mp4',
+  '27257436/757eacdfc21597b4b1df92a997ba672d.mp4',
+  '27257433/eba1485493aa1470cc1fd99dbc050877.mp4',
+  '27257439/e8bac6301a03797167c8b06ec39fb9bb.mp4',
+  '27257440/2186075fdedc54fa7c0f33a49c6275e9.mp4',
+  '27257438/08ada325c5712f58bcc7a76707afdff6.mp4',
+  '27257434/e096c053f01241e7f57d743da4b97ad4.mp4',
+  '27257435/835bdbeb77645eba40575f3b8db15ec9.mp4'
 ];
 
 let tamuraArr = [
-  'tamura/001',
-  'tamura/002',
-  'tamura/003',
-  'tamura/004'
+  '27257914/54b1db76654393d6beaa864a549141a1.mp4',
+  '27257908/fb95f0b32fd0caa3056b3891773e9cbe.mp4',
+  '27257909/2b03900d1245fe5e7d4e03950498e18a.mp4',
+  '27257910/fc588d7003b39d13a2b3df5006079a73.mp4'
 ];
 
 let sosuiArr = [
-  'sosui/001',
-  'sosui/002',
-  'sosui/003'
+  '27257454/ffcda7735999d4865e4c745ab8b2eb4f.mp4',
+  '27257451/5f2c87ff80bf2aa72b074550973899c3.mp4',
+  '27257452/f3f0ac954da13eca4377bb1cc08b7b17.mp4'
 ];
 
 const video = document.querySelector('#video'),
-mp4 = document.querySelector('#mp4'),
-pehu = document.querySelector('#pehu');
+  mp4 = document.querySelector('#mp4'),
+  pehu = document.querySelector('#pehu');
 
 // 配列シャッフル
 function shuffle(array) {
@@ -47,8 +46,7 @@ function shuffle(array) {
     array[n] = array[i];
     array[i] = t;
   }
-  video.setAttribute('poster', `${thumbs}${array[0]}_000001.jpg`);
-  mp4.setAttribute('src', `${directory}${array[0]}.mp4`);
+  mp4.setAttribute('src', `${directory}${array[0]}`);
   video.load();
   video.play();
 }
@@ -62,7 +60,7 @@ shuffle(coverArr)
 
 function changeHidden() {
   const articleAll = document.querySelectorAll('article'),
-  menu = document.querySelector('#menu');
+    menu = document.querySelector('#menu');
   articleAll.forEach(article => {
     if (article.hidden == false) {
       article.hidden = true;
@@ -92,11 +90,7 @@ function weather() {
   <p>
   <i>光・煙・ハウリングを使った行為と擬似世界旅行</i>
   </p>
-  <p>
-  <input hidden type="button" onclick="location.assign('/ctlg/05/pseudo-world-tour/')" value="疑似世界旅行"/>
-  </p>
-  `
-  video.setAttribute('poster', 'https://archive.org/download/1APR18SUN/1APR18SUN.thumbs/1APR18SUN/weather/001_000165.jpg');
+  `;
   changeHidden()
   shuffle(weatherArr)
 }
@@ -120,7 +114,7 @@ function gaku() {
   <p>
   <input type="button" onclick="shuffle(gakuArr)" value="他の動画を見る"/>
   </p>
-  `
+  `;
   changeHidden()
   shuffle(gakuArr)
 }
@@ -140,7 +134,7 @@ function tamura() {
   <p>
   <input type="button" onclick="shuffle(tamuraArr)" value="他の動画を見る"/>
   </p>
-  `
+  `;
   changeHidden()
   shuffle(tamuraArr)
 }
@@ -163,7 +157,7 @@ function sosui() {
   <p>
   <input type="button" onclick="shuffle(sosuiArr)" value="他の動画を見る"/>
   </p>
-  `
+  `;
   changeHidden()
   shuffle(sosuiArr)
 }
@@ -175,27 +169,27 @@ function menu() {
   <p>
   5:15 pm : solo paformance around 10 min x 3<br/>
   出演者3名が約10分ずつ演奏<br/>
-  <font color="red">出演者の名前をクリックすると演奏の動画が再生されます</font>
+  <font color="red">出演者の名前をクリックすると記録映像が再生されます</font>
   </p>
   <p>6:00 pm : bgm 2</p>
   <p>
   6:15 pm : pseudo world tour by shoji funakawa<br/>
-  <input hidden type="button" onclick="location.assign('/ctlg/05/pseudo-world-tour/')" value="疑似世界旅行"/>
+  疑似世界旅行
   </p>
   <p>7:00 pm : bgm 3</p>
   <p>
   7:15 pm : improvisation session with audience<br/>
-  <input hidden type="button" onclick="location.assign('/ctlg/05/1APR18SUN')" value="観客参加型即興セッション"/>
+  観客参加型即興セッション
   </p>
   <p>8:00 pm : end</p>
-  `
+  `;
   changeHidden()
 }
 
-pehu.addEventListener('mouseover', function() {
+pehu.addEventListener('mouseover', function () {
   video.hidden = false;
 });
 
-pehu.addEventListener('mouseleave', function() {
+pehu.addEventListener('mouseleave', function () {
   video.hidden = true;
 });

@@ -1,6 +1,6 @@
 'use strict'
 
-let main = document.querySelector('main'),
+const main = document.querySelector('main'),
   iframe = document.querySelector('#main'),
   day1 = document.querySelector('.left button'),
   day2 = document.querySelector('.right button'),
@@ -28,6 +28,8 @@ nn.addEventListener('click', function () {
 const closeButton = document.querySelector('#closeButton');
 closeButton.addEventListener('click', () => {
   dialogModal.close();
+  main.style.background = "50% 50% / cover #000";
+  main.style.backgroundImage = "url('cover.png')";
 });
 
 day1.addEventListener('click', function () {
