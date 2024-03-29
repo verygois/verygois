@@ -33,6 +33,22 @@ let sosuiArr = [
   '27257452/f3f0ac954da13eca4377bb1cc08b7b17.mp4'
 ];
 
+let sessionArr = [
+  '27258351/d76c7438928048eed12e78187f831396.mp4',
+  '27258362/4ec5b0e0ace6774ecd36218529b4e643.mp4',
+  '27258352/3b0cf1a63c8b132fa34cd0fece98d5ad.mp4',
+  '27258354/a7167b19425debd7865d3060402d2d94.mp4',
+  '27258353/1f49f97db0d8260955bb58c8c2b58b79.mp4',
+  '27258361/295607dd743e6b85b1becb4e7343cde9.mp4',
+  '27258356/440e947097e550746db9601fb47998e9.mp4',
+  '27258359/9b62bb1a5108fdb9a0f43594904fde7b.mp4',
+  '27258364/87550eac2ccf06b8faa5c1767e517286.mp4',
+  '27258360/a609e56c2243717f64ad9394b4a01a53.mp4',
+  '27258349/ad53ed49ee6502f514bf3f8544e928aa.mp4',
+  '27258350/7efa9a8f1335f222e4f728f28daa1c54.mp4',
+  '27258355/fa64345b61f7ed955e5328a7b98e483c.mp4'
+];
+
 const video = document.querySelector('#video'),
   mp4 = document.querySelector('#mp4'),
   pehu = document.querySelector('#pehu');
@@ -55,8 +71,6 @@ video.addEventListener('ended', () => {
   video.load();
   video.play();
 }, false);
-
-shuffle(coverArr)
 
 function changeHidden() {
   const articleAll = document.querySelectorAll('article'),
@@ -91,8 +105,8 @@ function weather() {
   <i>光・煙・ハウリングを使った行為と擬似世界旅行</i>
   </p>
   `;
-  changeHidden()
-  shuffle(weatherArr)
+  changeHidden();
+  shuffle(weatherArr);
 }
 
 function gaku() {
@@ -115,8 +129,8 @@ function gaku() {
   <input type="button" onclick="shuffle(gakuArr)" value="他の動画を見る"/>
   </p>
   `;
-  changeHidden()
-  shuffle(gakuArr)
+  changeHidden();
+  shuffle(gakuArr);
 }
 
 function tamura() {
@@ -135,8 +149,8 @@ function tamura() {
   <input type="button" onclick="shuffle(tamuraArr)" value="他の動画を見る"/>
   </p>
   `;
-  changeHidden()
-  shuffle(tamuraArr)
+  changeHidden();
+  shuffle(tamuraArr);
 }
 
 function sosui() {
@@ -158,8 +172,8 @@ function sosui() {
   <input type="button" onclick="shuffle(sosuiArr)" value="他の動画を見る"/>
   </p>
   `;
-  changeHidden()
-  shuffle(sosuiArr)
+  changeHidden();
+  shuffle(sosuiArr);
 }
 
 function menu() {
@@ -183,7 +197,7 @@ function menu() {
   </p>
   <p>8:00 pm : end</p>
   `;
-  changeHidden()
+  changeHidden();
 }
 
 pehu.addEventListener('mouseover', function () {
@@ -193,3 +207,5 @@ pehu.addEventListener('mouseover', function () {
 pehu.addEventListener('mouseleave', function () {
   video.hidden = true;
 });
+
+shuffle(coverArr);
