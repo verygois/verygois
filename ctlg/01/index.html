@@ -14,6 +14,8 @@
       "img/002.JPG",
     ];
 
+    const youtubeID = 'BiXpyNuVvpY';
+
     document.addEventListener("DOMContentLoaded", () => {
       slideIMG(imgAll, '#img')
     });
@@ -34,7 +36,7 @@
 
   <!--Icons-->
   <link rel="icon" href="/cv/icon/favicon.png" type="image/png">
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../index.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
 </head>
@@ -91,17 +93,6 @@
   </form>
 
   <div id="player"></div>
-  <script>
-    var player;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        videoId: 'BiXpyNuVvpY',
-        playerVars: {
-          'controls': 0
-        }
-      });
-    }
-  </script>
   <script src="../js/youtube.js"></script>
 
   <!--

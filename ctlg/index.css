@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    padding: 0;
     margin: 0;
 }
 
@@ -104,6 +105,11 @@ form button {
 h2,
 .no b {
     font-weight: 500;
+}
+
+#index {
+    clear: both;
+    width: 100%;
 }
 
 #index .info {

@@ -9,8 +9,13 @@
   <script src="../js/img.js"></script>
   <script>
     const imgAll = [
-      "img/000.JPG",
+      "../01/img/000.JPG",
+      "../02/img/000.JPG",
+      "../03/img/000.JPG",
+      "../04/img/000.JPG",
     ];
+
+    const youtubeID = '_4UTQy1GaYQ';
 
     document.addEventListener("DOMContentLoaded", () => {
       slideIMG(imgAll, '#img')
@@ -19,8 +24,8 @@
 
   <!--og:meta-->
   <meta content="product" property="og:type">
-  <title>Very Gois #___</title>
-  <meta content="Very Gois #_" property="og:title">
+  <title>Very Gois #__</title>
+  <meta content="Very Gois #__" property="og:title">
   <meta content="___" name="description">
   <meta content="___" name="og:description">
 
@@ -32,7 +37,7 @@
 
   <!--Icons-->
   <link rel="icon" href="/cv/icon/favicon.png" type="image/png">
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../index.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
 </head>
@@ -42,6 +47,7 @@
     Very Gois
     <b>#___</b>
   </h1>
+
   <article id="index">
     <div id="img">
       <span dir="ltr" id="pre" onclick="pre(imgAll, '#img')"></span>
@@ -50,7 +56,6 @@
     <section class="info">
       <u>Index</u>
       <ol>
-        <li></li>
         <li></li>
       </ol>
       <p>___</p>
@@ -61,7 +66,7 @@
         <u>Date</u> <time>0000.00.00</time><br>
       </h2>
       <p class="links">
-        <u>Press</u>
+        <u>Link</u>
         <a href="#" target="_blank">???</a>
       </p>
     </aside>
@@ -78,18 +83,8 @@
     </h3>
     <button type="button">Buy Now</button>
   </form>
+
   <div id="player"></div>
-  <script>
-    var player;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        videoId: '_4UTQy1GaYQ',
-        playerVars: {
-          'controls': 0
-        }
-      });
-    }
-  </script>
   <script src="../js/youtube.js"></script>
 
   <!--

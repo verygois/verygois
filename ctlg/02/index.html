@@ -15,6 +15,8 @@
       "img/003.JPG",
     ];
 
+    const youtubeID = 'Os57-E_8DT0';
+
     document.addEventListener("DOMContentLoaded", () => {
       slideIMG(imgAll, '#img')
     });
@@ -35,7 +37,7 @@
 
   <!--Icons-->
   <link rel="icon" href="/cv/icon/favicon.png" type="image/png">
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../index.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
 </head>
@@ -73,8 +75,8 @@
     </section>
     <aside>
       <h2>
-        <u>First Press</u> <time>2016.7.10</time><br>
-        <u>Second Press</u> <time>2021.6.9</time><br>
+        <u>First Press (microSD)</u> <time>2016.7.10</time><br>
+        <u>Second Press (CD-R)</u> <time>2021.6.9</time><br>
       </h2>
       <p class="links">
         <u>review</u>
@@ -95,17 +97,6 @@
     <button type="button">Buy Now</button>
   </form>
   <div id="player"></div>
-  <script>
-    var player;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        videoId: 'Os57-E_8DT0',
-        playerVars: {
-          'controls': 0
-        }
-      });
-    }
-  </script>
   <script src="../js/youtube.js"></script>
 
   <!--
