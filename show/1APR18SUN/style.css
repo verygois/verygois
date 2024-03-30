@@ -29,8 +29,8 @@ aside i {
   font-family: "MS Mincho", "SimSong", serif;
 }
 
-nav h2,
-nav h3,
+h2,
+h3,
 section,
 aside {
   font-family: "Arial", "YuGothic", "Yu Gothic", sans-serif;
@@ -60,8 +60,8 @@ h1,
   line-height: 200%;
 }
 
-nav h2,
-nav h3,
+h2,
+h3,
 section i,
 aside a,
 aside i {
