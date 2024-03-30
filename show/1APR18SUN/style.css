@@ -32,33 +32,48 @@ aside i {
 h2,
 h3,
 section,
-aside {
+aside,
+#chapter li::marker {
   font-family: "Arial", "YuGothic", "Yu Gothic", sans-serif;
 }
 
 h1,
 section i,
-nav u:hover {
+nav u:hover,
+#chapter li {
   font-family: 'Times New Roman', 'Times', 'YuMincho', serif;
 }
 
 h1,
 section i,
-aside i {
+aside i,
+#chapter li {
   font-style: italic;
   letter-spacing: -0.05rem;
 }
 
+#chapter li::marker {
+  font-style: normal;
+}
+
 h1,
-#info details {
+#info details,
+#chapter li {
   font-size: 200%;
 }
 
 #cover #pehu,
-#info p strong,
-#chapter li {
+#info p strong {
   font-size: 150%;
   line-height: 200%;
+}
+
+#chapter li {
+  line-height: 200%;
+}
+
+#chapter li::marker {
+  font-size: 55%;
 }
 
 h2,
