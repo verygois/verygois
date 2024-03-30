@@ -109,7 +109,7 @@ h1,
 nav,
 section,
 aside,
-h3,
+#info h3,
 #info summary,
 #info p {
   padding: 0.25rem;
