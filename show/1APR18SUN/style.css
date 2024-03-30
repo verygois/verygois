@@ -55,7 +55,8 @@ h1,
 }
 
 #cover #pehu,
-#info p strong {
+#info p strong,
+#chapter li {
   font-size: 150%;
   line-height: 200%;
 }
@@ -108,6 +109,7 @@ h1,
 nav,
 section,
 aside,
+h3,
 #info summary,
 #info p {
   padding: 0.25rem;
@@ -126,7 +128,12 @@ aside,
 }
 
 article {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   overflow: auto;
+  width: 100%;
   height: 100vh;
   max-height: -webkit-fill-available;
 }
@@ -176,14 +183,12 @@ input[type="button"]:hover {
 }
 
 input[type="button"] {
-  border: 0.01rem solid;
   border-radius: 5rem;
   font-size: 150%;
   padding: 0.5rem 0.75rem;
 }
 
 button {
-  border: 0.01rem solid;
   border-radius: 50%;
   font-size: 150%;
   padding: 0;
