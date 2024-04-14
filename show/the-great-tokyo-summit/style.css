@@ -5,13 +5,13 @@ html {
 @font-face{
   font-family: 'Moody_Boys';
   font-weight: 400;
-  src: url('/ctlg/fonts/family/dafont/Moody_Boys.ttf') format('truetype');
+  src: url('https://verygois.github.io/fontbook/family/dafont/Moody_Boys.ttf') format('truetype');
 }
 
 @font-face{
   font-family: 'KouzanSousho';
   font-weight: 400;
-  src: url('/ctlg/fonts/family/musashi/kouzansousho.otf') format('opentype');
+  src: url('https://verygois.github.io/fontbook/family/musashi/kouzansousho.otf') format('opentype');
 }
 
 header,
