@@ -1,9 +1,3 @@
----
-layout: page
-title: How to Coding
-permalink: /howto/
----
-
 # *How to* Create a **Website** by [Jekyll](https://jekyllrb-ja.github.io/) 
 
 シンプルで、ブログのような、静的サイト
