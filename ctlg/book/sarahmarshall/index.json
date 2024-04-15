@@ -17,7 +17,8 @@
   "links": [
     {
       "url": "https://www.instagram.com/marshallsarah",
-      "text": "Instagram"
+      "text": "Instagram",
+      "target": "_blank"
     }
   ]
 }

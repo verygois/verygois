@@ -18,15 +18,18 @@
   "links": [
     {
       "url": "https://twitter.com/aiuebo",
-      "text": "Twitter"
+      "text": "Twitter",
+      "target": "_blank"
     },
     {
       "url": "https://vimeo.com/user20753585",
-      "text": "Vimeo"
+      "text": "Vimeo",
+      "target": "_blank"
     },
     {
       "url": "https://pocopuu.net/",
-      "text": "Website"
+      "text": "Website",
+      "target": "_blank"
     }
   ]
 }

@@ -29,3 +29,11 @@ function pre(arr, query) {
     }
     document.querySelector(query).style.backgroundImage = `url('${arr[i]}')`;
 };
+
+async function fetchHTML(url = '', query = '') {
+    fetch(url)
+        .then(response => response.text())
+        .then(innerHTML => {
+            document.querySelector(query).innerHTML += innerHTML
+        }, false)
+}

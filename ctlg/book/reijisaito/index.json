@@ -24,15 +24,18 @@
   "links": [
     {
       "url": "https://www.instagram.com/reijisaito",
-      "text": "Instagram"
+      "text": "Instagram",
+      "target": "_blank"
     },
     {
       "url": "https://www.youtube.com/channel/UC-jP9et_XjZCRk2KREyHSHA",
-      "text": "YouTube"
+      "text": "YouTube",
+      "target": "_blank"
     },
     {
       "url": "https://reijisaito.com/",
-      "text": "Website"
+      "text": "Website",
+      "target": "_blank"
     }
   ]
 }

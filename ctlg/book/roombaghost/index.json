@@ -22,15 +22,18 @@
   "links": [
     {
       "url": "https://twitter.com/roombaghost",
-      "text": "Twitter"
+      "text": "Twitter",
+      "target": "_blank"
     },
     {
       "url": "https://www.instagram.com/roombaghost",
-      "text": "Instagram"
+      "text": "Instagram",
+      "target": "_blank"
     },
     {
       "url": "https://laurelschwulst.com/",
-      "text": "Website"
+      "text": "Website",
+      "target": "_blank"
     }
   ]
 }

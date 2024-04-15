@@ -22,11 +22,13 @@
   "links": [
     {
       "url": "https://soundcloud.com/nadia07109",
-      "text": "Soundcloud"
+      "text": "Soundcloud",
+      "target": "_blank"
     },
     {
       "url": "https://npanzer.com/",
-      "text": "Website"
+      "text": "Website",
+      "target": "_blank"
     }
   ]
 }

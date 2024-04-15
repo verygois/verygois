@@ -19,11 +19,13 @@
   "links": [
     {
       "url": "https://010001111000.com/",
-      "text": "Website"
+      "text": "Website",
+      "target": "_blank"
     },
     {
       "url": "https://www.youtube.com/user/010001111000",
-      "text": "YouTube"
+      "text": "YouTube",
+      "target": "_blank"
     }
   ]
 }

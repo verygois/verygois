@@ -18,15 +18,18 @@
   "links": [
     {
       "url": "https://twitter.com/soshimatsunobe",
-      "text": "Twitter"
+      "text": "Twitter",
+      "target": "_blank"
     },
     {
       "url": "https://www.instagram.com/soshi_matsunobe/",
-      "text": "Instagram"
+      "text": "Instagram",
+      "target": "_blank"
     },
     {
       "url": "http://matsunobe.net",
-      "text": "Website"
+      "text": "Website",
+      "target": "_blank"
     }
   ]
 }

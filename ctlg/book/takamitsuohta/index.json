@@ -22,11 +22,13 @@
   "links": [
     {
       "url": "https://www.instagram.com/takamitsuohta/",
-      "text": "Instagram"
+      "text": "Instagram",
+      "target": "_blank"
     },
     {
       "url": "https://soundcloud.com/takamitsuohta",
-      "text": "Soundcloud"
+      "text": "Soundcloud",
+      "target": "_blank"
     }
   ]
 }

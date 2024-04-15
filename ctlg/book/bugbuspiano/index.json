@@ -23,15 +23,18 @@
   "links": [
     {
       "url": "https://bugbuspiano.bandcamp.com/",
-      "text": "Bandcamp"
+      "text": "Bandcamp",
+      "target": "_blank"
     },
     {
       "url": "https://soundcloud.com/goodnightbed",
-      "text": "Soundcloud"
+      "text": "Soundcloud",
+      "target": "_blank"
     },
     {
       "url": "https://carriswheel.com/jake",
-      "text": "Website"
+      "text": "Website",
+      "target": "_blank"
     }
   ]
 }

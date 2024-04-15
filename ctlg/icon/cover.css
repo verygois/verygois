@@ -15,8 +15,8 @@ html {
 
 main,
 #cover {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 #cover {
@@ -47,7 +47,6 @@ main,
 }
 
 #compilation {
-  font-size: 16px;
   padding-bottom: 2.5rem;
   margin: -15vh auto 0;
   width: 90%;
@@ -111,7 +110,7 @@ main,
   }
 
   #compilation {
-    font-size: 4vw;
+    font-size: 125%;
   }
 
   #compilation a {

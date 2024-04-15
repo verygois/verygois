@@ -48,8 +48,17 @@ button {
 
 #ctlg span {
     position: absolute;
+    display: grid;
+    place-items: end start;
+    font-size: xx-large;
+    padding: 1rem;
     width: 50%;
     height: 100%;
+}
+
+#ctlg span:hover {
+    color: #fff;
+    cursor: pointer;
 }
 
 #ctlg #pre {
@@ -58,6 +67,16 @@ button {
 
 #ctlg #next {
     right: 0;
+}
+
+#ctlg #pre::after {
+    content: '←';
+    font-weight: 900;
+}
+
+#ctlg #next::after {
+    content: '→';
+    font-weight: 900;
 }
 
 button {
@@ -85,13 +104,20 @@ button {
     z-index: 1;
 }
 
-#ctlg section {
+#ctlg aside {
     background: #fff7;
+    border-radius: 1rem;
     color: #111;
     display: flex;
     flex-flow: column;
+    position: relative;
     padding: 1rem;
-    border-radius: 1rem;
+    z-index: 5;
+}
+
+#ctlg aside a {
+    color: #000;
+    font-family: "Arial Narrow", Arial, sans-serif;
 }
 
 #links {

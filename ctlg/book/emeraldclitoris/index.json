@@ -4,11 +4,6 @@
   "ja": "エメラルドクリトリス",
   "description": "ゼキ・ぎぼん正造・小幡健太郎・ディナミシャイスケの4人から成る総合アートポッセ",
   "imgAll": [
-    "10005.jpg",
-    "sny4.jpg",
-    "sny6.jpg",
-    "sny9.jpg",
-    "sny12.jpg",
     "01.jpg",
     "02.jpg",
     "03.jpg",
@@ -27,11 +22,13 @@
   "links": [
     {
       "url": "https://dinamishaisuke.wixsite.com/penifikko/emeraldclitoris",
-      "text": "penifikko"
+      "text": "penifikko",
+      "target": "_blank"
     },
     {
       "url": "http://inkak.ifdef.jp/",
-      "text": "inkak.ifdef.jp"
+      "text": "inkak.ifdef.jp",
+      "target": "_blank"
     }
   ]
 }

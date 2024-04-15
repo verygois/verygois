@@ -23,15 +23,18 @@
   "links": [
     {
       "url": "https://sufaip.blogspot.com/",
-      "text": "Sufaip"
+      "text": "Sufaip",
+      "target": "_blank"
     },
     {
       "url": "https://algae-c3e59.web.app/",
-      "text": "Algae"
+      "text": "Algae",
+      "target": "_blank"
     },
     {
       "url": "https://woopheadclrms.com/",
-      "text": "Website"
+      "text": "Website",
+      "target": "_blank"
     }
   ]
 }

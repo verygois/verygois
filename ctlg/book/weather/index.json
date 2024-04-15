@@ -15,11 +15,13 @@
   "links": [
     {
       "url": "https://twitter.com/a_sho_z",
-      "text": "Twitter"
+      "text": "Twitter",
+      "target": "_blank"
     },
     {
       "url": "https://www.instagram.com/a_weather_z/",
-      "text": "Instagram"
+      "text": "Instagram",
+      "target": "_blank"
     }
   ]
 }

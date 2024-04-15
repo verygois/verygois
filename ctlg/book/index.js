@@ -31,55 +31,62 @@ function book(obj) {
 
     if (obj.imgAll) {
         let i = 0;
+        const next = document.querySelector('#next');
+        const pre = document.querySelector('#pre');
 
         ctlg.style.backgroundImage = `url(${obj.id}/${obj.imgAll[i]})`;
-        document.querySelector('#next').addEventListener("click", function () {
-            if (i == 0) {
-                i++;
-            } else if (i == 1) {
-                i++;
-            } else if (i < obj.imgAll.length - 1) {
-                i++;
-            } else if (i == obj.imgAll.length - 1) {
-                i = 0;
-            }
-            document.querySelector('#ctlg').style.backgroundImage = `url(${obj.id}/${obj.imgAll[i]})`;
-        }, false);
 
-        document.querySelector('#pre').addEventListener("click", function () {
-            if (i == 0) {
-                i = obj.imgAll.length - 1;
-            } else if (i == 1) {
-                i--;
-            } else if (i < obj.imgAll.length - 1) {
-                i--;
-            } else if (i == obj.imgAll.length - 1) {
-                i--;
-            }
-            document.querySelector('#ctlg').style.backgroundImage = `url(${obj.id}/${obj.imgAll[i]})`;
-        }, false);
+        if (obj.imgAll.length === 1) {
+            next.remove()
+            pre.remove()
+        } else {
+            next.addEventListener("click", function () {
+                if (i == 0) {
+                    i++;
+                } else if (i == 1) {
+                    i++;
+                } else if (i < obj.imgAll.length - 1) {
+                    i++;
+                } else if (i == obj.imgAll.length - 1) {
+                    i = 0;
+                }
+                document.querySelector('#ctlg').style.backgroundImage = `url(${obj.id}/${obj.imgAll[i]})`;
+            }, false);
+
+            pre.addEventListener("click", function () {
+                if (i == 0) {
+                    i = obj.imgAll.length - 1;
+                } else if (i == 1) {
+                    i--;
+                } else if (i < obj.imgAll.length - 1) {
+                    i--;
+                } else if (i == obj.imgAll.length - 1) {
+                    i--;
+                }
+                document.querySelector('#ctlg').style.backgroundImage = `url(${obj.id}/${obj.imgAll[i]})`;
+            }, false);
+        }
     }
 
     if (obj.ctlg) {
-        const section = document.createElement('section')
-        document.querySelector('#ctlg').appendChild(section)
         for (const ctlg of obj.ctlg) {
-            const section = document.querySelector('#ctlg section')
-            const items = document.createElement('a')
-            items.href = ctlg.url;
-            items.textContent = ctlg.text;
-            section.appendChild(items)
+            const article = document.querySelector('article')
+            const item = document.createElement('a')
+            item.href = ctlg.url;
+            item.textContent = ctlg.text;
+            article.appendChild(item);
         }
     }
 
     if (obj.links) {
+        const aside = document.createElement('aside')
+        document.querySelector('#ctlg').appendChild(aside)
         for (const link of obj.links) {
-            const links = document.querySelector('#links')
-            const linkA = document.createElement('a')
-            linkA.href = link.url;
-            linkA.setAttribute('target', '_blank')
-            linkA.textContent = link.text;
-            links.appendChild(linkA);
+            const items = document.createElement('a')
+            items.href = link.url;
+            items.textContent = link.text;
+            items.setAttribute('target', link.target)
+            aside.appendChild(items)
         }
     }
 }

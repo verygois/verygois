@@ -22,11 +22,13 @@
   "links": [
     {
       "url": "https://www.instagram.com/100098877777888999i/",
-      "text": "Instagram"
+      "text": "Instagram",
+      "target": "_blank"
     },
     {
       "url": "https://soundcloud.com/jjjjjjj",
-      "text": "Soundcloud"
+      "text": "Soundcloud",
+      "target": "_blank"
     }
   ]
 }
