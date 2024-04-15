@@ -1,0 +1,25 @@
+{
+  "id": "weather",
+  "en": "Shoji Funakawa",
+  "ja": "船川翔司",
+  "description": "天気に関しての製作を続け、天気を題材とした人生を歩むこと",
+  "imgAll": [
+    "001.jpeg"
+  ],
+  "ctlg": [
+    {
+      "url": "/1f/03/",
+      "text": "03"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://twitter.com/a_sho_z",
+      "text": "Twitter"
+    },
+    {
+      "url": "https://www.instagram.com/a_weather_z/",
+      "text": "Instagram"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "roombaghost",
+  "en": "Laurel Schwulst",
+  "ja": "ローレル・シュヴルスト",
+  "description": "human drinking water living in NYC",
+  "imgAll": [
+    "001.jpeg",
+    "002.png",
+    "003.png",
+    "004.jpeg"
+  ],
+  "ctlg": [
+    {
+      "url": "/1f/05/",
+      "text": "05"
+    },
+    {
+      "url": "/2f/greenpeople.html",
+      "text": "Green People"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://twitter.com/roombaghost",
+      "text": "Twitter"
+    },
+    {
+      "url": "https://www.instagram.com/roombaghost",
+      "text": "Instagram"
+    },
+    {
+      "url": "https://laurelschwulst.com/",
+      "text": "Website"
+    }
+  ]
+}

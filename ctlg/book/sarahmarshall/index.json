@@ -1,0 +1,23 @@
+{
+  "id": "sarahmarshall",
+  "en": "Sarah Marshall",
+  "ja": "サラ・マーシャル",
+  "description": "Sarah Marshall is interested in the accumulation of language through everyday life, transposing the digital and the physical, and the absurd.",
+  "imgAll": [
+    "001.jpg",
+    "002.jpg",
+    "003.jpg"
+  ],
+  "ctlg": [
+    {
+      "url": "/1f/02/",
+      "text": "02"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.instagram.com/marshallsarah",
+      "text": "Instagram"
+    }
+  ]
+}

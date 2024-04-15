@@ -1,0 +1,32 @@
+{
+  "id": "takamitsuohta",
+  "en": "Takamitsu Ohta",
+  "ja": "大田高充",
+  "description": "graphic/bookdesign/sound/installation",
+  "imgAll": [
+    "001.jpg",
+    "002.jpg",
+    "003.jpg",
+    "004.jpg"
+  ],
+  "ctlg": [
+    {
+      "url": "/1f/03/",
+      "text": "03"
+    },
+    {
+      "url": "../04/",
+      "text": "Very Gois #4"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.instagram.com/takamitsuohta/",
+      "text": "Instagram"
+    },
+    {
+      "url": "https://soundcloud.com/takamitsuohta",
+      "text": "Soundcloud"
+    }
+  ]
+}

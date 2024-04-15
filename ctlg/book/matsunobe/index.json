@@ -1,0 +1,32 @@
+{
+  "id": "matsunobe",
+  "en": "Soshi Matsunobe",
+  "ja": "松延総司",
+  "description": "美術家 | Artist",
+  "imgAll": [
+    "001.jpeg",
+    "002.jpeg",
+    "003.jpeg",
+    "004.jpeg"
+  ],
+  "ctlg": [
+    {
+      "url": "/1f/03/",
+      "text": "03"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://twitter.com/soshimatsunobe",
+      "text": "Twitter"
+    },
+    {
+      "url": "https://www.instagram.com/soshi_matsunobe/",
+      "text": "Instagram"
+    },
+    {
+      "url": "http://matsunobe.net",
+      "text": "Website"
+    }
+  ]
+}

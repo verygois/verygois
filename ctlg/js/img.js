@@ -15,7 +15,6 @@ function next(arr, query) {
         i = 0;
     }
     document.querySelector(query).style.backgroundImage = `url('${arr[i]}')`;
-    console.log(i)
 };
 
 function pre(arr, query) {
@@ -29,5 +28,4 @@ function pre(arr, query) {
         i--;
     }
     document.querySelector(query).style.backgroundImage = `url('${arr[i]}')`;
-    console.log(i)
 };

@@ -1,0 +1,32 @@
+{
+  "id": "jjjjjjj",
+  "en": "Joseph Torres",
+  "ja": "ジョセフ・トレス",
+  "description": "artist new york city",
+  "imgAll": [
+    "001.jpeg",
+    "002.jpeg",
+    "003.jpeg",
+    "004.jpeg"
+  ],
+  "ctlg": [
+    {
+      "url": "../01/",
+      "text": "Very Gois #1"
+    },
+    {
+      "url": "/2f/ns1.html",
+      "text": "NS 1"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://www.instagram.com/100098877777888999i/",
+      "text": "Instagram"
+    },
+    {
+      "url": "https://soundcloud.com/jjjjjjj",
+      "text": "Soundcloud"
+    }
+  ]
+}

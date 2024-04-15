@@ -1,0 +1,111 @@
+html {
+    font-size: 16px;
+    height: -webkit-fill-available;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#ctlg,
+button {
+    display: grid;
+    place-items: center;
+}
+
+#ctlg {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-height: -webkit-fill-available;
+}
+
+#ctlg h1 {
+    place-self: start;
+}
+
+#ctlg h1 rb {
+    font-weight: 500;
+    font-family: "Great Vibes", cursive;
+    transform: scale(0.75, 2.5);
+}
+
+#ctlg h1 rt {
+    font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+#ctlg h1 {
+    user-select: none;
+    pointer-events: none;
+}
+
+#ctlg span {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+#ctlg #pre {
+    left: 0;
+}
+
+#ctlg #next {
+    right: 0;
+}
+
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+#ctlg h1,
+#ctlg h1 rt {
+    font-size: 100%;
+}
+
+#ctlg h1 rb {
+    color: #fff;
+    text-shadow: #000 0.1rem 0.1rem;
+    display: inline-block;
+    font-size: 200%;
+}
+
+#ctlg h1 rt {
+    color: #000;
+    text-shadow: #fff 1px 1px;
+    position: relative;
+    z-index: 1;
+}
+
+#ctlg section {
+    background: #fff7;
+    color: #111;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#links {
+    float: left;
+}
+
+button {
+    background: transparent;
+    float: right;
+    font-size: 222%;
+    width: 3.21rem;
+    height: 3.21rem;
+}
+
+@media screen and (max-width: 750px) {}
+
+@media screen and (max-width: 500px) {}

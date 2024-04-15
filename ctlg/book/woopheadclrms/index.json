@@ -1,0 +1,37 @@
+{
+  "id": "woopheadclrms",
+  "en": "woopheadclrms",
+  "ja": "Hiroki Yamasaki",
+  "description": "Hiroki Yamasaki | Sufaip | Ukiuki Atama | Algae",
+  "imgAll": [
+    "001.jpeg",
+    "002.jpeg",
+    "003.jpeg",
+    "004.jpeg",
+    "005.jpeg"
+  ],
+  "ctlg": [
+    {
+      "url": "../04/",
+      "text": "Very Gois #4"
+    },
+    {
+      "url": "/1f/05/",
+      "text": "05"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://sufaip.blogspot.com/",
+      "text": "Sufaip"
+    },
+    {
+      "url": "https://algae-c3e59.web.app/",
+      "text": "Algae"
+    },
+    {
+      "url": "https://woopheadclrms.com/",
+      "text": "Website"
+    }
+  ]
+}

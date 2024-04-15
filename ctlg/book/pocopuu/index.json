@@ -1,0 +1,32 @@
+{
+  "id": "pocopuu",
+  "en": "Muku Kobayashi",
+  "ja": "小林椋",
+  "description": "Artist | 正直 SHOJIKI",
+  "imgAll": [
+    "001.jpeg",
+    "002.jpeg",
+    "003.jpeg",
+    "004.jpeg"
+  ],
+  "ctlg": [
+    {
+      "url": "/1f/03/",
+      "text": "03"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://twitter.com/aiuebo",
+      "text": "Twitter"
+    },
+    {
+      "url": "https://vimeo.com/user20753585",
+      "text": "Vimeo"
+    },
+    {
+      "url": "https://pocopuu.net/",
+      "text": "Website"
+    }
+  ]
+}

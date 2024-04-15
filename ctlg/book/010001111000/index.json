@@ -1,0 +1,29 @@
+{
+  "id": "010001111000",
+  "en": "010001111000",
+  "ja": "",
+  "description": "010001111000 | 0100011110001, etc",
+  "imgAll": [
+    "20220106_124252.jpg"
+  ],
+  "ctlg": [
+    {
+      "url": "../04/",
+      "text": "Very Gois #4"
+    },
+    {
+      "url": "/1f/01/",
+      "text": "01"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://010001111000.com/",
+      "text": "Website"
+    },
+    {
+      "url": "https://www.youtube.com/user/010001111000",
+      "text": "YouTube"
+    }
+  ]
+}

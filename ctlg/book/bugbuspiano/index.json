@@ -1,0 +1,37 @@
+{
+  "id": "bugbuspiano",
+  "en": "Bug Bus Piano",
+  "ja": "バグバズピアノ",
+  "description": "Misic | Painter | One of members of carriswheel, Quay, etc",
+  "imgAll": [
+    "001.png",
+    "002.png",
+    "003.jpeg",
+    "004.jpeg",
+    "005.jpeg"
+  ],
+  "ctlg": [
+    {
+      "url": "../01/",
+      "text": "Very Gois #1"
+    },
+    {
+      "url": "/chikiriki/",
+      "text": "Chikiriki"
+    }
+  ],
+  "links": [
+    {
+      "url": "https://bugbuspiano.bandcamp.com/",
+      "text": "Bandcamp"
+    },
+    {
+      "url": "https://soundcloud.com/goodnightbed",
+      "text": "Soundcloud"
+    },
+    {
+      "url": "https://carriswheel.com/jake",
+      "text": "Website"
+    }
+  ]
+}
