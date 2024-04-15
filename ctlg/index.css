@@ -7,10 +7,6 @@ body {
     margin: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 .links a {
     color: #000;
     border-bottom: 0.1rem solid;
@@ -189,7 +185,6 @@ form {
 }
 
 @media screen and (min-width: 950px) {
-
     form {
         position: fixed;
         bottom: 0;

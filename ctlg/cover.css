@@ -137,13 +137,13 @@ main,
   #cover {
     overflow: hidden;
   }
-  
+
   #header,
   #compilation,
   #one {
     display: none;
   }
-  
+
   footer {
     break-before: page;
   }
