@@ -1,9 +1,0 @@
-#header,
-#header menu,
-#header #button {
-    top: 0;
-}
-
-#header menu {
-    align-items: start;
-}
