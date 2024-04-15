@@ -1,0 +1,179 @@
+html {
+  font-family: 'YuMincho', 'Times', serif;
+  font-size: 16px;
+  height: -webkit-fill-available;
+}
+
+body,
+article {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+article {
+  width: 100%;
+  height: 100vh;
+  max-height: -webkit-fill-available;
+}
+
+article section,
+#close {
+  pointer-events: auto;
+  user-select: auto;
+}
+
+#close {
+  font-size: 500%;
+}
+
+h1,
+h3 {
+  font-size: 200%;
+}
+
+h2 {
+  font-size: 150%;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  padding: 0.5rem
+}
+
+article section .data::before,
+article section .data::after,
+article section p time,
+article section p small,
+article section p u {
+  font-size: 90%;
+}
+
+h1,
+h2,
+h3,
+a,
+article p,
+#close {
+  color: #000;
+  -webkit-text-stroke: 0.04rem #fff;
+  text-stroke: 0.04rem #fff;
+}
+
+h2 a,
+h3 a {
+  border: solid 2px #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+article {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  pointer-events: none;
+  user-select: none;
+  z-index: 10;
+}
+
+article section {
+  text-align: center;
+  width: 100vw;
+  max-height: 100%;
+  overflow: auto;
+}
+
+article section img {
+  display: block;
+  padding: 0;
+  margin: 0.25rem 0 0 0;
+}
+
+#enter {
+  width: 90vw;
+  max-width: 450px;
+}
+
+article section .data::before {
+  content: attr(data-before);
+  color:#666;
+}
+
+article section .data::after {
+  content: attr(data-after);
+  color:#666;
+}
+
+article section .data,
+article section p {
+  position: relative;
+}
+
+article section .data::before,
+article section .data::after,
+article section p time,
+article section p small {
+  position: absolute;
+  top: 0;
+}
+
+article section .data::before,
+article section p time {
+  left: 0;
+}
+
+article section .data::after,
+article section p small {
+  right: 0;
+}
+
+#close {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0rem 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+article section video,
+article section object {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+}
+
+article section object {
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+@media (orientation: landscape) {
+  article section video {
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 75%;
+  }
+}
+
+@media (orientation: portrait) {
+  article section video {
+    max-height: 90vw;
+    max-width: 75vh;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}

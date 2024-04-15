@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+#header #button,
+#header menu li {
+  font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+#header menu li:first-child {
+  font-family: "Great Vibes", cursive;
+}
+
+#header button b::after {
+  content: 'Menu';
+}
+
+#header button.active b::after {
+  content: 'Close';
+}
+
+#header {
+  font-size: 16px;
+}
+
+#header #button,
+#header menu {
+  font-size: 125%;
+}
+
+#header menu li:first-child {
+  font-size: 150%;
+}
+
+.hidden main,
+.hidden footer {
+  display: none;
+}
+
+body.hidden {
+  overflow: hidden;
+}
+
+#header a,
+#header button {
+  color: #000;
+  text-decoration: none;
+}
+
+#header button {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+#header button,
+#header button b {
+  font-weight: 400;
+}
+
+#header a:hover,
+#header button:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+#header,
+#header menu {
+  padding: 0;
+  margin: 0;
+}
+
+#header #button {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+#header menu li {
+  padding: 0.5rem;
+  margin: 0;
+}
+
+#header,
+#header #button {
+  position: fixed;
+  z-index: 999;
+}
+
+#header,
+#header menu {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#header #button {
+  right: 0;
+}
+
+#header menu {
+  display: flex;
+}
+
+#header menu {
+  list-style: none;
+}
+
+@media (orientation: landscape) {
+  #header menu {
+    justify-content: space-between;
+  }
+
+  #header #button {
+    display: none;
+  }
+}
+
+@media (orientation: portrait) {
+  #header {
+    font-size: 5vw;
+  }
+
+  #header #button {
+    padding: 0.5rem;
+    margin: 0.25rem 0.5rem;
+  }
+
+  #header menu {
+    background-color: #fff;
+    flex-flow: column;
+    position: absolute;
+    transform: translateX(100%);
+    transition: ease .5s;
+    padding: 0.5rem;
+    min-height: 100vh;
+    overflow: auto;
+  }
+
+  #header menu.active {
+    transform: translateX(0);
+  }
+}

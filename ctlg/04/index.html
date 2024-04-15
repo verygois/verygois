@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <script src="../../index.js"></script>
+  <script src="../js/img.js"></script>
+  <script>
+    const imgAll = [
+      "img/000.JPG",
+      "img/001.JPG",
+      "img/002.JPG",
+      "img/003.JPG",
+      "img/004.JPG",
+      "img/005.JPG",
+    ];
+
+    const youtubeID = 'rreWLC4I7F0';
+
+    document.addEventListener("DOMContentLoaded", () => {
+      slideIMG(imgAll, '#img')
+    });
+  </script>
+
+  <!--og:meta-->
+  <meta content="product" property="og:type">
+  <title>Very Gois #04</title>
+  <meta content="Very Gois #04" property="og:title">
+  <meta content="First Press 2017.10.10 | 2 CD-R + 1 DVD-R" name="description">
+  <meta content="First Press 2017.10.10 | 2 CD-R + 1 DVD-R" name="og:description">
+
+  <!--for Twitter-->
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://vg.pe.hu/ctlg/04/" property="og:url">
+  <meta content="https://vg.pe.hu/ctlg/04/img/000.JPG" property="og:image">
+  <meta content="https://vg.pe.hu/ctlg/04/img/000.JPG" name="twitter:image:src">
+
+  <!--Icons-->
+  <link rel="icon" href="/cv/icon/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../index.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+</head>
+
+<body>
+  <h1 id="title" class="no">
+    Very Gois
+    <b>#04</b>
+  </h1>
+  <article id="index">
+    <div id="img">
+      <span dir="ltr" id="pre" onclick="pre(imgAll, '#img')"></span>
+      <span dir="rtl" id="next" onclick="next(imgAll, '#img')"></span>
+    </div>
+    <section class="info">
+      <u>Disc 1 (CD-R)</u>
+      <ol>
+        <li>refrain - aoosya</li>
+        <li>Review - Natalia Panzer & Theodore Cale Schafer</li>
+        <li>Car Ride Morning - DJPUPPY</li>
+        <li>dj20170909 - POOW</li>
+        <li>driftwood - crown shyness</li>
+        <li>愛の響き - Kenji Yamamoto</li>
+      </ol>
+    </section>
+    <section class="info">
+      <u>Disc 2 (CD-R)</u>
+      <ul>
+        <li>41 tracks - cy fan × rockrototante</li>
+      </ul>
+    </section>
+    <section class="info">
+      <u>Disc 3 (DVD-R for computer)</u>
+      <ul>
+        <li>14 images | 5 videos | 11 Tracks - 0100011110001 [222.7 MB]</li>
+        <li>8 Videos - Sean Tatol [306 MB]</li>
+        <li>driftwood.mov - crown shyness [209.6 MB]</li>
+        <li>#12 dj1.mp4 - POOW [3.26 GB]</li>
+        <li>24JUN17SAT.mov - 神田聡 [256.6 MB]</li>
+        <li>愛の響き.mp4 - Kenji Yamamoto [1.2 MB]</li>
+      </ul>
+    </section>
+    <section class="info">
+      <u>Booklet</u>
+      <ul>
+        <li>refrain - aoosya</li>
+        <li>11 drawing - cy fan</li>
+        <li>three numbers - Sean Tatol</li>
+        and more some secret contents
+      </ul>
+    </section>
+    <aside>
+      <h2>
+        <u>First Press</u> <time>2017.10.10</time><br>
+        <u>Re-Press</u> <time>2021.6.9</time><br>
+      </h2>
+    </aside>
+  </article>
+
+  <form action="" method="">
+    <h3 class="no" id="sales">
+      Sales Price
+      <b>2500 JPY</b>
+    </h3>
+    <h3 class="no" id="wholesale">
+      Wholesale Price
+      <b>1250 JPY</b>
+    </h3>
+    <button type="button">Buy Now</button>
+  </form>
+  <div id="player"></div>
+  <script src="../js/youtube.js"></script>
+
+  <!--
+  <aside id="dis" class="links">
+    <u>Distributors</u>
+    <a href="#" target="_blank">???</a>
+  </aside>
+  -->
+
+</body>
+
+</html>
